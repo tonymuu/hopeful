@@ -19,16 +19,30 @@ class EventTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 5
     }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! UITableViewCell
-//        cell.backgroundView = UIImageView(image: UIImage(named: "download.jpeg"))
-        cell.backgroundView = UIImageView(image: UIImage(named: "download2.jpeg"), highlightedImage: UIImage(named: "download.jpeg"))
+        
+        if(indexPath.row <= 2) {
+            cell.backgroundView = UIImageView(image: UIImage(named: "download2.jpg"))
+            cell.selectedBackgroundView = UIImageView(image: UIImage(named: "download.jpeg"))
+            //        cell.backgroundView = UIImageView(image: UIImage(named: "download2.jpeg"), highlightedImage: UIImage(named: "download.jpeg"))
+            
+            
+        } else {
+            var viewCell = UIView(frame: cell.frame)
+            viewCell.backgroundColor = UIColor.redColor()
+            
+            cell.backgroundColor = UIColor.grayColor()
+            cell.selectedBackgroundView = viewCell
+        }
         
         return cell
     }
+    
+    
 
 }
