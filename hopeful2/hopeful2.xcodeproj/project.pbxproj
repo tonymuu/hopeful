@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D5761B72A390003C5627 /* AppDelegate.swift */; };
-		02D3D5791B72A390003C5627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D5781B72A390003C5627 /* ViewController.swift */; };
 		02D3D57C1B72A390003C5627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D57A1B72A390003C5627 /* Main.storyboard */; };
 		02D3D57E1B72A390003C5627 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D57D1B72A390003C5627 /* Images.xcassets */; };
 		02D3D5811B72A390003C5627 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D57F1B72A390003C5627 /* LaunchScreen.xib */; };
 		02D3D58D1B72A390003C5627 /* hopeful2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D58C1B72A390003C5627 /* hopeful2Tests.swift */; };
+		02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D5961B72A534003C5627 /* EventTableViewController.swift */; };
+		02D3D5991B72A74A003C5627 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D5981B72A74A003C5627 /* download.jpeg */; };
+		02D3D59B1B72A966003C5627 /* download2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D59A1B72A966003C5627 /* download2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		02D3D5711B72A390003C5627 /* hopeful2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hopeful2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D3D5751B72A390003C5627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02D3D5761B72A390003C5627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02D3D5781B72A390003C5627 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02D3D57B1B72A390003C5627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02D3D57D1B72A390003C5627 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		02D3D5801B72A390003C5627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		02D3D5861B72A390003C5627 /* hopeful2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hopeful2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D3D58B1B72A390003C5627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02D3D58C1B72A390003C5627 /* hopeful2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hopeful2Tests.swift; sourceTree = "<group>"; };
+		02D3D5961B72A534003C5627 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		02D3D5981B72A74A003C5627 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		02D3D59A1B72A966003C5627 /* download2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,8 @@
 		02D3D5731B72A390003C5627 /* hopeful2 */ = {
 			isa = PBXGroup;
 			children = (
+				02D3D5961B72A534003C5627 /* EventTableViewController.swift */,
 				02D3D5761B72A390003C5627 /* AppDelegate.swift */,
-				02D3D5781B72A390003C5627 /* ViewController.swift */,
 				02D3D57A1B72A390003C5627 /* Main.storyboard */,
 				02D3D57D1B72A390003C5627 /* Images.xcassets */,
 				02D3D57F1B72A390003C5627 /* LaunchScreen.xib */,
@@ -90,6 +94,8 @@
 		02D3D5741B72A390003C5627 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				02D3D59A1B72A966003C5627 /* download2.jpg */,
+				02D3D5981B72A74A003C5627 /* download.jpeg */,
 				02D3D5751B72A390003C5627 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				02D3D57C1B72A390003C5627 /* Main.storyboard in Resources */,
+				02D3D5991B72A74A003C5627 /* download.jpeg in Resources */,
 				02D3D5811B72A390003C5627 /* LaunchScreen.xib in Resources */,
+				02D3D59B1B72A966003C5627 /* download2.jpg in Resources */,
 				02D3D57E1B72A390003C5627 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02D3D5791B72A390003C5627 /* ViewController.swift in Sources */,
+				02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */,
 				02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
