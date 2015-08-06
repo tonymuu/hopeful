@@ -15,6 +15,7 @@
 		02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D5961B72A534003C5627 /* EventTableViewController.swift */; };
 		02D3D5991B72A74A003C5627 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D5981B72A74A003C5627 /* download.jpeg */; };
 		02D3D59B1B72A966003C5627 /* download2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D59A1B72A966003C5627 /* download2.jpg */; };
+		02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D59C1B73DD20003C5627 /* BackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		02D3D5961B72A534003C5627 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		02D3D5981B72A74A003C5627 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		02D3D59A1B72A966003C5627 /* download2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download2.jpg; sourceTree = "<group>"; };
+		02D3D59C1B73DD20003C5627 /* BackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		02D3D5731B72A390003C5627 /* hopeful2 */ = {
 			isa = PBXGroup;
 			children = (
+				02D3D59C1B73DD20003C5627 /* BackView.swift */,
 				02D3D5961B72A534003C5627 /* EventTableViewController.swift */,
 				02D3D5761B72A390003C5627 /* AppDelegate.swift */,
 				02D3D57A1B72A390003C5627 /* Main.storyboard */,
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */,
 				02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */,
 				02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */,
 			);

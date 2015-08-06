@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Event Table View Controller-->
+        <!--Title-->
         <scene sceneID="vyF-Zz-A5o">
             <objects>
                 <tableViewController id="yeI-P7-iQR" customClass="EventTableViewController" customModule="hopeful2" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,6 +13,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xbk-O0-cwC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xbk-O0-cwC" id="DTK-em-Zya">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="J9B-0Y-IO9">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J9B-0Y-IO9" id="AgM-G7-G2q">
@@ -25,7 +32,11 @@
                             <outlet property="delegate" destination="yeI-P7-iQR" id="3g5-gQ-fv9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5Tr-4z-8x9"/>
+                    <navigationItem key="navigationItem" title="Title" prompt="Prompt" id="5Tr-4z-8x9">
+                        <barButtonItem key="backBarButtonItem" title="Back " id="fEv-T6-F8S"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;&lt;&lt;" id="hDM-1u-L3S"/>
+                        <barButtonItem key="rightBarButtonItem" title="&gt;&gt;&gt;" id="553-wh-Zj6"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9p-pa-iba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
