@@ -21,11 +21,7 @@ class EventTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! UITableViewCell
     
-        if(indexPath.row == 0 ) {
-            let myLabel = UILabel(frame: cell.frame)
-            myLabel.text = "Add new"
-            cell.addSubview(myLabel)
-        } else if(indexPath.row <= 2) {
+        if(indexPath.row <= 2) {
             let backView = UIImageView(frame: cell.bounds)
             let frontViewContainer = UIView(frame: backView.bounds)
             let frontView = UIImageView(frame: frontViewContainer.bounds)
@@ -34,7 +30,7 @@ class EventTableViewController: UITableViewController {
             
             cell.addSubview(backView)
             backView.addSubview(frontViewContainer)
-            frontViewContainer.addSubview(frontView)
+             frontViewContainer.addSubview(frontView)
             
             frontView.image = UIImage(named: "download.jpeg")
             backView.image = UIImage(named: "download2.jpg")
