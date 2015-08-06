@@ -22,14 +22,48 @@ class EventTableViewController: UITableViewController {
         return 5
     }
 
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 150.0
+    }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! UITableViewCell
-        
+    
         if(indexPath.row <= 2) {
-            cell.backgroundView = UIImageView(image: UIImage(named: "download2.jpg"))
-            cell.selectedBackgroundView = UIImageView(image: UIImage(named: "download.jpeg"))
-            //        cell.backgroundView = UIImageView(image: UIImage(named: "download2.jpeg"), highlightedImage: UIImage(named: "download.jpeg"))
+            let backView = UIImageView(frame: cell.bounds)
+            let frontViewContainer = UIView(frame: backView.bounds)
+            let frontView = UIImageView(frame: frontViewContainer.bounds)
+            
+            frontViewContainer.frame.size = CGSize(width: 0, height: frontViewContainer.frame.size.height)
+            
+            frontViewContainer.layer.shadowOffset = CGSizeZero
+            frontViewContainer.layer.shadowRadius = 10;
+            frontViewContainer.layer.shadowOpacity = 1.0
+            frontViewContainer.layer.shadowColor = UIColor.redColor().CGColor
+            
+            cell.addSubview(backView)
+            backView.addSubview(frontViewContainer)
+            frontViewContainer.addSubview(frontView)
+            
+            frontView.image = UIImage(named: "download.jpeg")
+            backView.image = UIImage(named: "download2.jpg")
+            
+            
+            frontView.contentMode = UIViewContentMode.ScaleAspectFill
+            backView.contentMode = UIViewContentMode.ScaleAspectFill
+            
+            frontView.clipsToBounds = true
+            backView.clipsToBounds = true
+            frontViewContainer.clipsToBounds = true
+            
+
+            UIView.animateWithDuration(3.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut | UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse, animations: {
+                frontViewContainer.frame.size = CGSize(width: backView.frame.size.width, height: frontViewContainer.frame.size.height)
+            }, completion: nil)
+            
+//            UIView.animateWithDuration(6.0, animations: {
+//                frontViewContainer.frame.size = CGSize(width: backView.frame.size.width, height: frontViewContainer.frame.size.height)
+//            })
             
             
         } else {
@@ -42,7 +76,4 @@ class EventTableViewController: UITableViewController {
         
         return cell
     }
-    
-    
-
 }
