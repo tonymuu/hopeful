@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02B55F011B750F4400981D23 /* CustomRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B55F001B750F4400981D23 /* CustomRefreshControl.swift */; };
+		02B55F051B75332900981D23 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B55F041B75332900981D23 /* CreateEventViewController.swift */; };
 		02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D5761B72A390003C5627 /* AppDelegate.swift */; };
 		02D3D57C1B72A390003C5627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D57A1B72A390003C5627 /* Main.storyboard */; };
 		02D3D57E1B72A390003C5627 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D57D1B72A390003C5627 /* Images.xcassets */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02B55F001B750F4400981D23 /* CustomRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRefreshControl.swift; sourceTree = "<group>"; };
+		02B55F041B75332900981D23 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		02D3D5711B72A390003C5627 /* hopeful2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hopeful2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D3D5751B72A390003C5627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02D3D5761B72A390003C5627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				02D3D59C1B73DD20003C5627 /* BackView.swift */,
+				02B55F041B75332900981D23 /* CreateEventViewController.swift */,
 				02D3D5961B72A534003C5627 /* EventTableViewController.swift */,
+				02B55F001B750F4400981D23 /* CustomRefreshControl.swift */,
 				02D3D5761B72A390003C5627 /* AppDelegate.swift */,
 				02D3D57A1B72A390003C5627 /* Main.storyboard */,
 				02D3D57D1B72A390003C5627 /* Images.xcassets */,
@@ -223,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B55F011B750F4400981D23 /* CustomRefreshControl.swift in Sources */,
 				02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */,
+				02B55F051B75332900981D23 /* CreateEventViewController.swift in Sources */,
 				02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */,
 				02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */,
 			);
@@ -421,6 +429,7 @@
 				02D3D5921B72A390003C5627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02D3D5931B72A390003C5627 /* Build configuration list for PBXNativeTarget "hopeful2Tests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +438,7 @@
 				02D3D5951B72A390003C5627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

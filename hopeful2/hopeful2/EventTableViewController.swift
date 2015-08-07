@@ -1,26 +1,48 @@
 import UIKit
 
-class EventTableViewController: UITableViewController, UIScrollViewDelegate {
 
-    
+class EventTableViewController: UITableViewController, UIScrollViewDelegate, UITableViewDelegate {
+
+    @IBOutlet weak var pullDownLabel: UILabel!
+
+    var isAtTop = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.attributedTitle = NSAttributedString(string: "pull down to create")
         self.refreshControl?.tintColor = UIColor.whiteColor()
         self.refreshControl?.backgroundColor = UIColor.blueColor()
-        self.refreshControl?.addTarget(self, action: Selector(createEvent()), forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl?.addTarget(self, action: "createEvent", forControlEvents: UIControlEvents.ValueChanged)
+        
+        if(!isAtTop) {
+            self.pullDownLabel.frame.size = CGSize(width: self.pullDownLabel.frame.size.width, height: 0)
+        }
         
     }
 
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        if(scrollView.contentOffset.y == 0) {
+            println("top of scroll view")
+            isAtTop = true
+            UIView.animateWithDuration(0.6, animations: {
+                self.pullDownLabel.frame.size = CGSize(width: self.pullDownLabel.frame.size.width, height: 32.0)
+            })
+        } else {
+//            isAtTop = false
+            UIView.animateWithDuration(0.6, animations: {
+                self.pullDownLabel.frame.size = CGSize(width: self.pullDownLabel.frame.size.width, height: 0)
+            })
+        }
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return 5
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -66,19 +88,13 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate {
         return cell
     }
     
-    override func scrollViewDidScrollToTop(scrollView: UIScrollView) {
-        self.view.frame.origin = CGPoint(x: self.view.frame.origin.x, y: self.view.frame.origin.y - 20)
-    }
-    
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
-        
-    }
-    
     func createEvent() {
-        if(self.refreshControl?.refreshing == true) {
-            println("pulled down once")
+        if(isAtTop) {
+            println("is at top and pull down")
+            self.performSegueWithIdentifier("CreateEventSegue", sender: self)
+            self.refreshControl?.endRefreshing()
         }
         
-        self.refreshControl?.endRefreshing()
+        
     }
 }

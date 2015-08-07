@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="taE-eS-NNn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="taE-eS-NNn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EZP-ce-Z6u">
             <objects>
-                <viewController id="taE-eS-NNn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventContainerViewController" id="taE-eS-NNn" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BYH-Cn-AAI"/>
                         <viewControllerLayoutGuide type="bottom" id="oN2-4k-c6U"/>
@@ -16,53 +17,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull Down To Create" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwd-ng-OVt">
-                                <rect key="frame" x="0.0" y="20" width="600" height="32"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="GoO-bM-bxY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-qM-Kqb">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <connections>
-                                    <segue destination="yeI-P7-iQR" kind="embed" id="mO2-s4-UOb"/>
+                                    <segue destination="yeI-P7-iQR" kind="embed" id="JAO-Xp-60R"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Dwd-ng-OVt" secondAttribute="trailing" id="0lY-ae-sYk"/>
-                            <constraint firstItem="Dwd-ng-OVt" firstAttribute="top" secondItem="BYH-Cn-AAI" secondAttribute="bottom" id="Zug-o5-ImT"/>
-                            <constraint firstAttribute="centerX" secondItem="Dwd-ng-OVt" secondAttribute="centerX" id="ZxK-Dg-zFA"/>
-                            <constraint firstItem="Dwd-ng-OVt" firstAttribute="leading" secondItem="o7k-h1-TQn" secondAttribute="leading" id="cz8-t0-dKW"/>
-                            <constraint firstItem="fsb-qM-Kqb" firstAttribute="top" secondItem="Dwd-ng-OVt" secondAttribute="bottom" constant="-32" id="l90-DN-f1d"/>
-                            <constraint firstItem="oN2-4k-c6U" firstAttribute="top" secondItem="fsb-qM-Kqb" secondAttribute="bottom" id="pCf-Xp-ZSR"/>
-                            <constraint firstItem="fsb-qM-Kqb" firstAttribute="leading" secondItem="o7k-h1-TQn" secondAttribute="leading" id="q7c-J5-Z9h"/>
-                            <constraint firstAttribute="trailing" secondItem="fsb-qM-Kqb" secondAttribute="trailing" id="rZq-1Y-Z6H"/>
+                            <constraint firstItem="oN2-4k-c6U" firstAttribute="top" secondItem="fsb-qM-Kqb" secondAttribute="bottom" id="649-Vb-iHU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fsb-qM-Kqb" secondAttribute="trailing" constant="-16" id="bSj-TL-evh"/>
+                            <constraint firstItem="fsb-qM-Kqb" firstAttribute="leading" secondItem="o7k-h1-TQn" secondAttribute="leadingMargin" constant="-16" id="n0A-Yx-jNA"/>
+                            <constraint firstItem="fsb-qM-Kqb" firstAttribute="top" secondItem="BYH-Cn-AAI" secondAttribute="bottom" id="uuA-jL-yhr"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="ZxK-Dg-zFA"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHF-0W-msy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2018" y="750"/>
         </scene>
+        <!--Create Event View Controller-->
+        <scene sceneID="Ug5-Tx-o57">
+            <objects>
+                <viewController id="bgi-GI-2cF" customClass="CreateEventViewController" customModule="hopeful2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OIg-gc-sIy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yp6-aK-Ldp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zl4-EA-vVR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXR-5b-Vnc">
+                                <rect key="frame" x="281" y="275" width="37" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneWasTapped:" destination="bgi-GI-2cF" eventType="touchUpInside" id="EX8-vv-vU1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.27615591340000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="zXR-5b-Vnc" secondAttribute="centerX" id="Hgg-Uj-AbU"/>
+                            <constraint firstAttribute="centerY" secondItem="zXR-5b-Vnc" secondAttribute="centerY" id="KGy-Hd-PL0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUt-SG-0Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2695" y="23"/>
+        </scene>
         <!--Event Table View Controller-->
         <scene sceneID="vyF-Zz-A5o">
             <objects>
                 <tableViewController id="yeI-P7-iQR" customClass="EventTableViewController" customModule="hopeful2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9XX-3D-JkW">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9XX-3D-JkW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull Down To Create" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dwd-ng-OVt">
+                            <rect key="frame" x="0.0" y="6" width="600" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="GoO-bM-bxY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="GoO-bM-bxY"/>
+                                </mask>
+                            </variation>
+                        </label>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="Xbk-O0-cwC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -78,6 +109,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="5Tr-4z-8x9"/>
+                    <connections>
+                        <outlet property="pullDownLabel" destination="Dwd-ng-OVt" id="lT6-wb-iv2"/>
+                        <segue destination="bgi-GI-2cF" kind="show" identifier="CreateEventSegue" id="Lpk-5j-UoP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9p-pa-iba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
