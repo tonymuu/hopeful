@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="taE-eS-NNn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="taE-eS-NNn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-qM-Kqb">
-                                <rect key="frame" x="0.0" y="40" width="600" height="559.5"/>
-                                <connections>
-                                    <segue destination="yeI-P7-iQR" kind="embed" id="mO2-s4-UOb"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull Down To Create" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwd-ng-OVt">
                                 <rect key="frame" x="0.0" y="20" width="600" height="32"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -32,6 +26,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-qM-Kqb">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <connections>
+                                    <segue destination="yeI-P7-iQR" kind="embed" id="mO2-s4-UOb"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -39,7 +39,7 @@
                             <constraint firstItem="Dwd-ng-OVt" firstAttribute="top" secondItem="BYH-Cn-AAI" secondAttribute="bottom" id="Zug-o5-ImT"/>
                             <constraint firstAttribute="centerX" secondItem="Dwd-ng-OVt" secondAttribute="centerX" id="ZxK-Dg-zFA"/>
                             <constraint firstItem="Dwd-ng-OVt" firstAttribute="leading" secondItem="o7k-h1-TQn" secondAttribute="leading" id="cz8-t0-dKW"/>
-                            <constraint firstItem="fsb-qM-Kqb" firstAttribute="top" secondItem="Dwd-ng-OVt" secondAttribute="bottom" id="l90-DN-f1d"/>
+                            <constraint firstItem="fsb-qM-Kqb" firstAttribute="top" secondItem="Dwd-ng-OVt" secondAttribute="bottom" constant="-32" id="l90-DN-f1d"/>
                             <constraint firstItem="oN2-4k-c6U" firstAttribute="top" secondItem="fsb-qM-Kqb" secondAttribute="bottom" id="pCf-Xp-ZSR"/>
                             <constraint firstItem="fsb-qM-Kqb" firstAttribute="leading" secondItem="o7k-h1-TQn" secondAttribute="leading" id="q7c-J5-Z9h"/>
                             <constraint firstAttribute="trailing" secondItem="fsb-qM-Kqb" secondAttribute="trailing" id="rZq-1Y-Z6H"/>
@@ -60,20 +60,14 @@
             <objects>
                 <tableViewController id="yeI-P7-iQR" customClass="EventTableViewController" customModule="hopeful2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9XX-3D-JkW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="559.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xbk-O0-cwC">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="Xbk-O0-cwC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xbk-O0-cwC" id="DTK-em-Zya">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="J9B-0Y-IO9">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J9B-0Y-IO9" id="AgM-G7-G2q">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

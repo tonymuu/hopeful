@@ -1,9 +1,18 @@
 import UIKit
 
-class EventTableViewController: UITableViewController {
+class EventTableViewController: UITableViewController, UIScrollViewDelegate {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.attributedTitle = NSAttributedString(string: "pull down to create")
+        self.refreshControl?.tintColor = UIColor.whiteColor()
+        self.refreshControl?.backgroundColor = UIColor.blueColor()
+        self.refreshControl?.addTarget(self, action: Selector(createEvent()), forControlEvents: UIControlEvents.ValueChanged)
+        
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -55,5 +64,21 @@ class EventTableViewController: UITableViewController {
         }
         
         return cell
+    }
+    
+    override func scrollViewDidScrollToTop(scrollView: UIScrollView) {
+        self.view.frame.origin = CGPoint(x: self.view.frame.origin.x, y: self.view.frame.origin.y - 20)
+    }
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+    }
+    
+    func createEvent() {
+        if(self.refreshControl?.refreshing == true) {
+            println("pulled down once")
+        }
+        
+        self.refreshControl?.endRefreshing()
     }
 }
