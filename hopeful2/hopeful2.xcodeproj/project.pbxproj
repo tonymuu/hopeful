@@ -18,6 +18,7 @@
 		02D3D5991B72A74A003C5627 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D5981B72A74A003C5627 /* download.jpeg */; };
 		02D3D59B1B72A966003C5627 /* download2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D59A1B72A966003C5627 /* download2.jpg */; };
 		02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D59C1B73DD20003C5627 /* BackView.swift */; };
+		EAF33A581B769A5000D2848E /* user.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAF33A571B769A5000D2848E /* user.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		02D3D5981B72A74A003C5627 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		02D3D59A1B72A966003C5627 /* download2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download2.jpg; sourceTree = "<group>"; };
 		02D3D59C1B73DD20003C5627 /* BackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		EAF33A571B769A5000D2848E /* user.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = user.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				02D3D59A1B72A966003C5627 /* download2.jpg */,
 				02D3D5981B72A74A003C5627 /* download.jpeg */,
 				02D3D5751B72A390003C5627 /* Info.plist */,
+				EAF33A571B769A5000D2848E /* user.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02D3D57C1B72A390003C5627 /* Main.storyboard in Resources */,
+				EAF33A581B769A5000D2848E /* user.plist in Resources */,
 				02D3D5991B72A74A003C5627 /* download.jpeg in Resources */,
 				02D3D5811B72A390003C5627 /* LaunchScreen.xib in Resources */,
 				02D3D59B1B72A966003C5627 /* download2.jpg in Resources */,

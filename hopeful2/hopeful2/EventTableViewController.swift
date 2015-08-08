@@ -73,7 +73,7 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
             backView.clipsToBounds = true
             frontViewContainer.clipsToBounds = true
             
-            UIView.animateWithDuration(6.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut | UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse, animations: {
+            UIView.animateWithDuration(6.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut | UIViewAnimationOptions.Autoreverse, animations: {
                 frontViewContainer.frame.size = CGSize(width: backView.frame.size.width, height: frontViewContainer.frame.size.height)
                 }, completion: nil)
             
