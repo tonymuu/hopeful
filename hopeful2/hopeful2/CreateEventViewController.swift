@@ -1,45 +1,73 @@
-//
-//  CreateEventViewController.swift
-//  hopeful2
-//
-//  Created by Tony Mu on 8/7/15.
-//  Copyright (c) 2015 Tony Mu. All rights reserved.
-//
-
 import UIKit
 
 class CreateEventViewController: UIViewController {
+    
+    @IBOutlet weak var hopeTextField: UITextField!
+    
+    @IBOutlet weak var startTimeTextField: UITextField!
+    
+    @IBOutlet weak var endTimeTextField: UITextField!
+    
+    var rootDict: NSMutableDictionary!
+    var rootArray: NSMutableArray!
+    
+    var hope: NSMutableDictionary = NSMutableDictionary()
+    var paths: Array<AnyObject> = []
+    var documentsDirectory: String = ""
+    var path: String = ""
+    
     @IBAction func doneWasTapped(sender: AnyObject) {
+        saveData()
+        
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.saveData()
         
-        self.loadData()
+        let fileManager = NSFileManager.defaultManager()
         
-    }
+        paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true) as Array
+        documentsDirectory = paths[0] as! String
+        path = documentsDirectory.stringByAppendingString("/hope.plist")
+        
+        if(!fileManager.fileExistsAtPath(path)) {
+            println("file doesn't exist")
+            if let bundlePath = NSBundle.mainBundle().pathForResource("hope", ofType: "plist") {
+                println("\(bundlePath)")
+                println("\(path)")
+                fileManager.copyItemAtPath(bundlePath, toPath: path, error: nil)
+            } else {
+                println("not found")
+            }
+        } else {
+            println("exists")
+        }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+        rootDict = NSMutableDictionary(contentsOfFile: path)
+        
+        if let array: AnyObject = rootDict.objectForKey("Hopes") {
+            rootArray = array as! NSMutableArray
+        } else {
+            rootArray = NSMutableArray()
+            rootDict.setValue(rootArray, forKey: "Hopes")
+        }
+}
+
     func saveData() {
         let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true) as Array
         let documentsDirectory = paths[0] as! String
-        let path = documentsDirectory.stringByAppendingString("user.plist")
+        let path = documentsDirectory.stringByAppendingString("/hope.plist")
+        println("write to \(documentsDirectory)")
+
+        hope.setValue(hopeTextField.text, forKey: "hopeTitle")
+        hope.setValue(startTimeTextField.text, forKey: "startTime")
+        hope.setValue(endTimeTextField.text, forKey: "endTime")
         
-        var dict: NSMutableDictionary = ["XInitializeItem": "DoNotEverChangeMe"]
+        rootArray.addObject(hope)
         
-        dict.setObject("fffffff", forKey: "Description")
-        dict.setObject("asdfjsdkfljkl", forKey: "Description")
-        dict.setObject("231", forKey: "Start Time")
-        dict.setObject("12121212121", forKey: "Start Time")
-        dict.setObject("321321321", forKey: "End Time")
-        
-        dict.writeToFile(path, atomically: false)
+        rootDict.writeToFile(path, atomically: false)
     }
     
     func loadData() {
@@ -62,26 +90,10 @@ class CreateEventViewController: UIViewController {
         }
         
         let resultDictionary = NSMutableDictionary(contentsOfFile: path)
-        println("loaded user.plist")
         
         if let dict = resultDictionary {
-            
-            
-            let descriptionKey = "Description"
-            let startTimeKey = "Start Time"
-            let endTimeKey = "End Time"
-            
-            let descriptions: Array = dict.objectForKey(descriptionKey) as AnyObject! as! Array<String>
-            
-            for description in descriptions {
-                println(description)
-            }
-            
-            println("\(dict.objectForKey(startTimeKey))")
-            println("\(dict.objectForKey(endTimeKey))")
+            rootDict = dict
         }
         
     }
-    
-
 }
