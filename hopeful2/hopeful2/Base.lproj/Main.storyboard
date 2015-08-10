@@ -113,21 +113,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull Down To Create" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dwd-ng-OVt">
-                            <rect key="frame" x="0.0" y="6" width="600" height="32"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vYL-rv-Qyh">
+                            <rect key="frame" x="0.0" y="-21" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="32" id="GoO-bM-bxY"/>
-                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="GoO-bM-bxY"/>
-                                </mask>
-                            </variation>
                         </label>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="Xbk-O0-cwC">
@@ -145,7 +136,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="5Tr-4z-8x9"/>
                     <connections>
-                        <outlet property="pullDownLabel" destination="Dwd-ng-OVt" id="lT6-wb-iv2"/>
+                        <outlet property="pullDownLabel" destination="vYL-rv-Qyh" id="hRZ-7x-Kqf"/>
                         <segue destination="bgi-GI-2cF" kind="show" identifier="CreateEventSegue" id="Lpk-5j-UoP"/>
                     </connections>
                 </tableViewController>
