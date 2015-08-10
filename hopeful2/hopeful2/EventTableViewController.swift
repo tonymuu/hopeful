@@ -5,8 +5,6 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
 
     @IBOutlet weak var pullDownLabel: UILabel!
     
-    var eventPhotoView: UIImageView!
-    var eventDetailView: UIView!
     
     var isAtTop = true
     
@@ -53,36 +51,35 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventTableViewCell
         
 //        self.eventPhotoView = UIView(frame: cell.frame)
 //        cell.addSubview(eventPhotoView)
-    
-        
         
         if(indexPath.row <= 2) {
-            let eventPhotoView = UIImageView(frame: cell.bounds)
-            let frontViewContainer = UIView(frame: eventPhotoView.bounds)
-            let frontView = UIImageView(frame: frontViewContainer.bounds)
+//            eventPhotoView = UIImageView(frame: cell.bounds)
+//            frontViewContainer = UIView(frame: eventPhotoView.bounds)
+//            frontView = UIImageView(frame: frontViewContainer.bounds)
             
-            frontViewContainer.frame.size = CGSize(width: 0, height: frontViewContainer.frame.size.height)
+            cell.frontViewContainer.frame.size = CGSize(width: 0, height: cell.frontViewContainer.frame.size.height)
             
-            cell.addSubview(eventPhotoView)
-            eventPhotoView.addSubview(frontViewContainer)
-             frontViewContainer.addSubview(frontView)
+//            cell.addSubview(eventPhotoView)
+//            eventPhotoView.addSubview(frontViewContainer)
+//             frontViewContainer.addSubview(frontView)
             
-            frontView.image = UIImage(named: "download.jpeg")
-            eventPhotoView.image = UIImage(named: "download2.jpg")
+            cell.frontView.image = UIImage(named: "download.jpeg")
+            cell.eventPhotoView.image = UIImage(named: "download2.jpg")
             
-            frontView.contentMode = UIViewContentMode.ScaleAspectFill
-            eventPhotoView.contentMode = UIViewContentMode.ScaleAspectFill
+            cell.frontView.contentMode = UIViewContentMode.ScaleAspectFill
+            cell.eventPhotoView.contentMode = UIViewContentMode.ScaleAspectFill
+            cell.frontViewContainer.contentMode = UIViewContentMode.ScaleAspectFill
             
-            frontView.clipsToBounds = true
-            eventPhotoView.clipsToBounds = true
-            frontViewContainer.clipsToBounds = true
+            cell.frontView.clipsToBounds = true
+            cell.eventPhotoView.clipsToBounds = true
+            cell.frontViewContainer.clipsToBounds = true
             
             UIView.animateWithDuration(6.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut | UIViewAnimationOptions.Autoreverse, animations: {
-                frontViewContainer.frame.size = CGSize(width: eventPhotoView.frame.size.width, height: frontViewContainer.frame.size.height)
+                cell.frontViewContainer.frame.size = CGSize(width: cell.eventPhotoView.frame.size.width, height: cell.frontViewContainer.frame.size.height)
                 }, completion: nil)
             
         } else {
@@ -100,11 +97,24 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
         
         println("\(indexPath.row)")
 
-        if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-//            UIView.transitionFromView(eventPhotoView, toView: eventDetailView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
-//            UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
-//
-//                }, completion: nil)
+        if let cell = tableView.cellForRowAtIndexPath(indexPath) as? EventTableViewCell {
+//            UIView.transitionFromView(cell.eventPhotoView, toView: cell.eventDetailView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
+            UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
+
+                cell.insertSubview(cell.eventDetailView, aboveSubview: cell.frontViewContainer)
+                }, completion: nil)
+        }
+    }
+    
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        if let cell = tableView.cellForRowAtIndexPath(indexPath) as? EventTableViewCell {
+            UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
+                
+                cell.insertSubview(cell.frontViewContainer, aboveSubview: cell.eventDetailView)
+                }, completion: nil)
+
+            
+//            UIView.transitionFromView(cell.eventDetailView, toView: cell.eventPhotoView, duration: 0.6, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
         }
     }
     

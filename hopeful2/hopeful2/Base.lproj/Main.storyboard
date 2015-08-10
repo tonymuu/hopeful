@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="taE-eS-NNn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="taE-eS-NNn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -121,12 +121,64 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="Xbk-O0-cwC">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="Xbk-O0-cwC" customClass="EventTableViewCell" customModule="hopeful2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xbk-O0-cwC" id="DTK-em-Zya">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lmD-7p-V7V" userLabel="eventDetailView">
+                                            <rect key="frame" x="-0.5" y="0.5" width="600" height="43.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-tv-2wg" userLabel="eventPhotoView">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amq-Ml-Qkf" userLabel="frontViewContainer">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aft-0U-KJS" userLabel="frontView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="aft-0U-KJS" secondAttribute="trailing" id="JZE-Aw-7YI"/>
+                                                <constraint firstItem="aft-0U-KJS" firstAttribute="leading" secondItem="Amq-Ml-Qkf" secondAttribute="leading" id="aEz-8p-CQu"/>
+                                                <constraint firstAttribute="bottom" secondItem="aft-0U-KJS" secondAttribute="bottom" id="gZg-uc-bkE"/>
+                                                <constraint firstItem="aft-0U-KJS" firstAttribute="top" secondItem="Amq-Ml-Qkf" secondAttribute="top" id="yF0-ti-o7K"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="kQT-tv-2wg" secondAttribute="bottom" id="0m6-TP-ih3"/>
+                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="leading" secondItem="DTK-em-Zya" secondAttribute="leading" id="2tj-uf-g55"/>
+                                        <constraint firstAttribute="trailing" secondItem="kQT-tv-2wg" secondAttribute="trailing" id="76t-xw-wXM"/>
+                                        <constraint firstAttribute="bottom" secondItem="kQT-tv-2wg" secondAttribute="bottom" id="FmN-zR-ac6"/>
+                                        <constraint firstItem="Amq-Ml-Qkf" firstAttribute="top" secondItem="DTK-em-Zya" secondAttribute="top" id="QVe-9f-Itz"/>
+                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="top" secondItem="DTK-em-Zya" secondAttribute="topMargin" id="Xxr-CM-ygC"/>
+                                        <constraint firstAttribute="bottom" secondItem="Amq-Ml-Qkf" secondAttribute="bottom" id="gBA-aW-xPf"/>
+                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="top" secondItem="DTK-em-Zya" secondAttribute="top" id="ldS-nW-OiK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kQT-tv-2wg" secondAttribute="trailing" id="pBk-vN-Qmd"/>
+                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="leading" secondItem="DTK-em-Zya" secondAttribute="leadingMargin" id="sva-uy-8Tx"/>
+                                        <constraint firstAttribute="trailing" secondItem="Amq-Ml-Qkf" secondAttribute="trailing" id="tVg-NK-CX1"/>
+                                        <constraint firstItem="Amq-Ml-Qkf" firstAttribute="leading" secondItem="DTK-em-Zya" secondAttribute="leading" id="yzO-Mk-KKi"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="0m6-TP-ih3"/>
+                                            <exclude reference="Xxr-CM-ygC"/>
+                                            <exclude reference="pBk-vN-Qmd"/>
+                                            <exclude reference="sva-uy-8Tx"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventDetailView" destination="lmD-7p-V7V" id="hle-q6-8sD"/>
+                                    <outlet property="eventPhotoView" destination="kQT-tv-2wg" id="KMK-3a-dyW"/>
+                                    <outlet property="frontView" destination="aft-0U-KJS" id="ZIm-iZ-SZd"/>
+                                    <outlet property="frontViewContainer" destination="Amq-Ml-Qkf" id="YJj-9u-OS2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

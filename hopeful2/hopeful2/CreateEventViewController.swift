@@ -39,13 +39,24 @@ class CreateEventViewController: UIViewController {
                 println("\(path)")
                 fileManager.copyItemAtPath(bundlePath, toPath: path, error: nil)
             } else {
-                println("not found")
+                println("not found, creating... ")
+                
+                let myDict: NSDictionary = ["Initialize" : "Initialize"]
+
+                myDict.writeToFile(path, atomically: false)
+                
+                println("created")
+                
+                println(path)
             }
         } else {
             println("exists")
+            println(path)
+
         }
 
         rootDict = NSMutableDictionary(contentsOfFile: path)
+        
         
         if let array: AnyObject = rootDict.objectForKey("Hopes") {
             rootArray = array as! NSMutableArray
