@@ -81,30 +81,30 @@ class CreateEventViewController: UIViewController {
         rootDict.writeToFile(path, atomically: false)
     }
     
-    func loadData() {
-        let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true) as Array
-        let documentDirectory = paths[0] as! String
-        let path = documentDirectory.stringByAppendingString("user.plist")
-        let fileManager = NSFileManager.defaultManager()
-        
-        if(!fileManager.fileExistsAtPath(path)) {
-            if let bundlePath = NSBundle.mainBundle().pathForResource("user", ofType: "plist") {
-                let resultDictionary = NSMutableDictionary(contentsOfFile: bundlePath)
-                println("copied file to location")
-                fileManager.copyItemAtPath(bundlePath, toPath: path, error: nil)
-            } else {
-                println("not found")
-            }
-        } else {
-            println("already exists")
-
-        }
-        
-        let resultDictionary = NSMutableDictionary(contentsOfFile: path)
-        
-        if let dict = resultDictionary {
-            rootDict = dict
-        }
-        
-    }
+//    func loadData() {
+//        let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true) as Array
+//        let documentDirectory = paths[0] as! String
+//        let path = documentDirectory.stringByAppendingString("user.plist")
+//        let fileManager = NSFileManager.defaultManager()
+//        
+//        if(!fileManager.fileExistsAtPath(path)) {
+//            if let bundlePath = NSBundle.mainBundle().pathForResource("user", ofType: "plist") {
+//                let resultDictionary = NSMutableDictionary(contentsOfFile: bundlePath)
+//                println("copied file to location")
+//                fileManager.copyItemAtPath(bundlePath, toPath: path, error: nil)
+//            } else {
+//                println("not found")
+//            }
+//        } else {
+//            println("already exists")
+//
+//        }
+//    
+//        let resultDictionary = NSMutableDictionary(contentsOfFile: path)
+//        
+//        if let dict = resultDictionary {
+//            rootDict = dict
+//        }
+//        
+//    }
 }

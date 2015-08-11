@@ -10,6 +10,8 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // initialize initial dictionary - default dictionary with attractive pictures/contents
 
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.attributedTitle = NSAttributedString(string: "pull down to create")
@@ -87,10 +89,7 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        println("\(indexPath.row)")
-        
         if let cell = tableView.cellForRowAtIndexPath(indexPath) as? EventTableViewCell {
-//            UIView.transitionFromView(cell.eventPhotoView, toView: cell.eventDetailView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)3
             let photoView = cell.eventPhotoView
             let frontViewContainer = cell.frontViewContainer
             
@@ -99,16 +98,11 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
                     self.showDetailView(cell)
                     }, completion: nil)
                 cell.didSelect = true
-                println("wasn't selected but now selected")
             } else {
                 UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
-//                    cell.addSubview(photoView)
-//                    cell.addSubview(frontViewContainer)
                     self.showPhotoView(cell)
                     }, completion: nil)
                 cell.didSelect = false
-                println("was selected but now isn't selected")
-
             }
         }
     }

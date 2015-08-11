@@ -18,6 +18,7 @@
 		02D3D5991B72A74A003C5627 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D5981B72A74A003C5627 /* download.jpeg */; };
 		02D3D59B1B72A966003C5627 /* download2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D59A1B72A966003C5627 /* download2.jpg */; };
 		02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D59C1B73DD20003C5627 /* BackView.swift */; };
+		EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C86A41B7988C100510EC4 /* HopesLoader.swift */; };
 		EA4AAF541B77125E003EADBB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		02D3D5981B72A74A003C5627 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		02D3D59A1B72A966003C5627 /* download2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download2.jpg; sourceTree = "<group>"; };
 		02D3D59C1B73DD20003C5627 /* BackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		EA0C86A41B7988C100510EC4 /* HopesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopesLoader.swift; sourceTree = "<group>"; };
 		EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 		02D3D5731B72A390003C5627 /* hopeful2 */ = {
 			isa = PBXGroup;
 			children = (
+				EA0C86A41B7988C100510EC4 /* HopesLoader.swift */,
 				EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */,
 				02D3D59C1B73DD20003C5627 /* BackView.swift */,
 				02B55F041B75332900981D23 /* CreateEventViewController.swift */,
@@ -238,6 +241,7 @@
 				02B55F051B75332900981D23 /* CreateEventViewController.swift in Sources */,
 				02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */,
 				02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */,
+				EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
