@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="taE-eS-NNn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="taE-eS-NNn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -109,7 +109,7 @@
         <scene sceneID="vyF-Zz-A5o">
             <objects>
                 <tableViewController id="yeI-P7-iQR" customClass="EventTableViewController" customModule="hopeful2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9XX-3D-JkW">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="340" sectionHeaderHeight="22" sectionFooterHeight="22" id="9XX-3D-JkW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -121,24 +121,52 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="Xbk-O0-cwC" customClass="EventTableViewCell" customModule="hopeful2" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="340" id="Xbk-O0-cwC" customClass="EventTableViewCell" customModule="hopeful2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xbk-O0-cwC" id="DTK-em-Zya">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lmD-7p-V7V" userLabel="eventDetailView">
-                                            <rect key="frame" x="-0.5" y="0.5" width="600" height="43.5"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-tv-2wg" userLabel="eventPhotoView">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                        </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amq-Ml-Qkf" userLabel="frontViewContainer">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmD-7p-V7V" userLabel="eventDetailView">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="339"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aft-0U-KJS" userLabel="frontView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhW-mq-kAp">
+                                                    <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVx-Z9-0fU">
+                                                    <rect key="frame" x="8" y="37" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-2k-qke">
+                                                    <rect key="frame" x="8" y="66" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.1092085733" green="0.79320095450000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Bkf-2k-qke" firstAttribute="top" secondItem="HVx-Z9-0fU" secondAttribute="bottom" constant="8" id="GZ4-59-5cR"/>
+                                                <constraint firstItem="HVx-Z9-0fU" firstAttribute="top" secondItem="QhW-mq-kAp" secondAttribute="bottom" constant="8" id="H9P-6M-1Aw"/>
+                                                <constraint firstItem="QhW-mq-kAp" firstAttribute="leading" secondItem="lmD-7p-V7V" secondAttribute="leading" constant="8" id="LJS-TM-CYo"/>
+                                                <constraint firstItem="HVx-Z9-0fU" firstAttribute="leading" secondItem="lmD-7p-V7V" secondAttribute="leading" constant="8" id="Vek-xJ-WJy"/>
+                                                <constraint firstItem="QhW-mq-kAp" firstAttribute="top" secondItem="lmD-7p-V7V" secondAttribute="top" constant="8" id="t3n-8y-WER"/>
+                                                <constraint firstItem="Bkf-2k-qke" firstAttribute="leading" secondItem="lmD-7p-V7V" secondAttribute="leading" constant="8" id="zHg-Rk-V2Q"/>
+                                            </constraints>
+                                        </view>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-tv-2wg" userLabel="eventPhotoView">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="339"/>
+                                        </imageView>
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amq-Ml-Qkf" userLabel="frontViewContainer">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="339"/>
+                                            <subviews>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aft-0U-KJS" userLabel="frontView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="339"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,27 +179,19 @@
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="kQT-tv-2wg" secondAttribute="bottom" id="0m6-TP-ih3"/>
-                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="leading" secondItem="DTK-em-Zya" secondAttribute="leading" id="2tj-uf-g55"/>
-                                        <constraint firstAttribute="trailing" secondItem="kQT-tv-2wg" secondAttribute="trailing" id="76t-xw-wXM"/>
-                                        <constraint firstAttribute="bottom" secondItem="kQT-tv-2wg" secondAttribute="bottom" id="FmN-zR-ac6"/>
+                                        <constraint firstAttribute="bottom" secondItem="kQT-tv-2wg" secondAttribute="bottom" id="2FV-1j-wB6"/>
+                                        <constraint firstAttribute="bottom" secondItem="lmD-7p-V7V" secondAttribute="bottom" id="F2p-fM-N0q"/>
+                                        <constraint firstItem="lmD-7p-V7V" firstAttribute="top" secondItem="DTK-em-Zya" secondAttribute="top" id="L9o-tI-UCy"/>
                                         <constraint firstItem="Amq-Ml-Qkf" firstAttribute="top" secondItem="DTK-em-Zya" secondAttribute="top" id="QVe-9f-Itz"/>
-                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="top" secondItem="DTK-em-Zya" secondAttribute="topMargin" id="Xxr-CM-ygC"/>
+                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="leading" secondItem="DTK-em-Zya" secondAttribute="leading" id="RNs-vW-mFB"/>
+                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="top" secondItem="DTK-em-Zya" secondAttribute="top" id="T47-f8-Vry"/>
+                                        <constraint firstItem="lmD-7p-V7V" firstAttribute="leading" secondItem="DTK-em-Zya" secondAttribute="leading" id="bbU-WQ-C0F"/>
                                         <constraint firstAttribute="bottom" secondItem="Amq-Ml-Qkf" secondAttribute="bottom" id="gBA-aW-xPf"/>
-                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="top" secondItem="DTK-em-Zya" secondAttribute="top" id="ldS-nW-OiK"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="kQT-tv-2wg" secondAttribute="trailing" id="pBk-vN-Qmd"/>
-                                        <constraint firstItem="kQT-tv-2wg" firstAttribute="leading" secondItem="DTK-em-Zya" secondAttribute="leadingMargin" id="sva-uy-8Tx"/>
+                                        <constraint firstAttribute="trailing" secondItem="lmD-7p-V7V" secondAttribute="trailing" id="rnm-Un-2rI"/>
                                         <constraint firstAttribute="trailing" secondItem="Amq-Ml-Qkf" secondAttribute="trailing" id="tVg-NK-CX1"/>
+                                        <constraint firstAttribute="trailing" secondItem="kQT-tv-2wg" secondAttribute="trailing" id="xXV-sY-LaA"/>
                                         <constraint firstItem="Amq-Ml-Qkf" firstAttribute="leading" secondItem="DTK-em-Zya" secondAttribute="leading" id="yzO-Mk-KKi"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="0m6-TP-ih3"/>
-                                            <exclude reference="Xxr-CM-ygC"/>
-                                            <exclude reference="pBk-vN-Qmd"/>
-                                            <exclude reference="sva-uy-8Tx"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="eventDetailView" destination="lmD-7p-V7V" id="hle-q6-8sD"/>

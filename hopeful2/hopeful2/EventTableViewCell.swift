@@ -15,7 +15,8 @@ class EventTableViewCell: UITableViewCell {
     @IBOutlet weak var frontViewContainer: UIView!
     @IBOutlet weak var frontView: UIImageView!
 
-
+    var didSelect = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

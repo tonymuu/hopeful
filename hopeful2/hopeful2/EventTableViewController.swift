@@ -53,20 +53,10 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventTableViewCell
         
-//        self.eventPhotoView = UIView(frame: cell.frame)
-//        cell.addSubview(eventPhotoView)
+        cell.eventDetailView.backgroundColor = UIColor.blueColor()
         
         if(indexPath.row <= 2) {
-//            eventPhotoView = UIImageView(frame: cell.bounds)
-//            frontViewContainer = UIView(frame: eventPhotoView.bounds)
-//            frontView = UIImageView(frame: frontViewContainer.bounds)
-            
             cell.frontViewContainer.frame.size = CGSize(width: 0, height: cell.frontViewContainer.frame.size.height)
-            
-//            cell.addSubview(eventPhotoView)
-//            eventPhotoView.addSubview(frontViewContainer)
-//             frontViewContainer.addSubview(frontView)
-            
             cell.frontView.image = UIImage(named: "download.jpeg")
             cell.eventPhotoView.image = UIImage(named: "download2.jpg")
             
@@ -78,9 +68,11 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
             cell.eventPhotoView.clipsToBounds = true
             cell.frontViewContainer.clipsToBounds = true
             
-            UIView.animateWithDuration(6.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut | UIViewAnimationOptions.Autoreverse, animations: {
-                cell.frontViewContainer.frame.size = CGSize(width: cell.eventPhotoView.frame.size.width, height: cell.frontViewContainer.frame.size.height)
-                }, completion: nil)
+            showPhotoView(cell)
+            
+//            UIView.animateWithDuration(6.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut | UIViewAnimationOptions.Autoreverse, animations: {
+//                cell.frontViewContainer.frame.size = CGSize(width: cell.eventPhotoView.frame.size.width, height: cell.frontViewContainer.frame.size.height)
+//                }, completion: nil)
             
         } else {
             var viewCell = UIView(frame: cell.frame)
@@ -96,26 +88,45 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         println("\(indexPath.row)")
-
+        
         if let cell = tableView.cellForRowAtIndexPath(indexPath) as? EventTableViewCell {
-//            UIView.transitionFromView(cell.eventPhotoView, toView: cell.eventDetailView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
-            UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
+//            UIView.transitionFromView(cell.eventPhotoView, toView: cell.eventDetailView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)3
+            let photoView = cell.eventPhotoView
+            let frontViewContainer = cell.frontViewContainer
+            
+            if(!cell.didSelect) {
+                UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
+                    self.showDetailView(cell)
+                    }, completion: nil)
+                cell.didSelect = true
+                println("wasn't selected but now selected")
+            } else {
+                UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
+//                    cell.addSubview(photoView)
+//                    cell.addSubview(frontViewContainer)
+                    self.showPhotoView(cell)
+                    }, completion: nil)
+                cell.didSelect = false
+                println("was selected but now isn't selected")
 
-                cell.insertSubview(cell.eventDetailView, aboveSubview: cell.frontViewContainer)
-                }, completion: nil)
+            }
         }
     }
     
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        if let cell = tableView.cellForRowAtIndexPath(indexPath) as? EventTableViewCell {
-            UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
-                
-                cell.insertSubview(cell.frontViewContainer, aboveSubview: cell.eventDetailView)
-                }, completion: nil)
+    func showPhotoView(cell: EventTableViewCell) {
+        cell.eventPhotoView.hidden = false
+        cell.frontViewContainer.hidden = false
+        cell.frontView.hidden = false
+        cell.eventDetailView.hidden = true
 
-            
-//            UIView.transitionFromView(cell.eventDetailView, toView: cell.eventPhotoView, duration: 0.6, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
-        }
+    }
+    
+    func showDetailView(cell: EventTableViewCell) {
+        cell.eventPhotoView.hidden = true
+        cell.frontViewContainer.hidden = true
+        cell.frontView.hidden = true
+        cell.eventDetailView.hidden = false
+
     }
     
     func createEvent() {
