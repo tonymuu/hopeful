@@ -67,18 +67,21 @@ class CreateEventViewController: UIViewController {
 }
 
     func saveData() {
-        let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true) as Array
-        let documentsDirectory = paths[0] as! String
-        let path = documentsDirectory.stringByAppendingString("/hope.plist")
-        println("write to \(documentsDirectory)")
-
-        hope.setValue(hopeTextField.text, forKey: "hopeTitle")
-        hope.setValue(startTimeTextField.text, forKey: "startTime")
-        hope.setValue(endTimeTextField.text, forKey: "endTime")
+        if(hopeTextField.text != nil) {
+            let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true) as Array
+            let documentsDirectory = paths[0] as! String
+            let path = documentsDirectory.stringByAppendingString("/hope.plist")
+            println("write to \(documentsDirectory)")
+            
+            hope.setValue(hopeTextField.text, forKey: "hopeTitle")
+//            hope.setValue(startTimeTextField.text, forKey: "startTime")
+//            hope.setValue(endTimeTextField.text, forKey: "endTime")
+            
+            rootArray.addObject(hope)
+            
+            rootDict.writeToFile(path, atomically: false)
+        }
         
-        rootArray.addObject(hope)
-        
-        rootDict.writeToFile(path, atomically: false)
     }
     
 //    func loadData() {

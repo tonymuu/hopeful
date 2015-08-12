@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02AF4C511B7BAE45006B809E /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 02AF4C501B7BAE45006B809E /* Menu.png */; };
+		02AF4C531B7BC769006B809E /* Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 02AF4C521B7BC769006B809E /* Plus.png */; };
+		02AF4C551B7BD6D4006B809E /* CustomLeftToRightPushSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF4C541B7BD6D4006B809E /* CustomLeftToRightPushSegue.swift */; };
+		02AF4C571B7BE11B006B809E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF4C561B7BE11B006B809E /* MenuViewController.swift */; };
 		02B55F011B750F4400981D23 /* CustomRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B55F001B750F4400981D23 /* CustomRefreshControl.swift */; };
 		02B55F051B75332900981D23 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B55F041B75332900981D23 /* CreateEventViewController.swift */; };
 		02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D5761B72A390003C5627 /* AppDelegate.swift */; };
@@ -33,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02AF4C501B7BAE45006B809E /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
+		02AF4C521B7BC769006B809E /* Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plus.png; sourceTree = "<group>"; };
+		02AF4C541B7BD6D4006B809E /* CustomLeftToRightPushSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLeftToRightPushSegue.swift; sourceTree = "<group>"; };
+		02AF4C561B7BE11B006B809E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		02B55F001B750F4400981D23 /* CustomRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRefreshControl.swift; sourceTree = "<group>"; };
 		02B55F041B75332900981D23 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		02D3D5711B72A390003C5627 /* hopeful2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hopeful2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +106,8 @@
 				02D3D5961B72A534003C5627 /* EventTableViewController.swift */,
 				02B55F001B750F4400981D23 /* CustomRefreshControl.swift */,
 				02D3D5761B72A390003C5627 /* AppDelegate.swift */,
+				02AF4C541B7BD6D4006B809E /* CustomLeftToRightPushSegue.swift */,
+				02AF4C561B7BE11B006B809E /* MenuViewController.swift */,
 				02D3D57A1B72A390003C5627 /* Main.storyboard */,
 				02D3D57D1B72A390003C5627 /* Images.xcassets */,
 				02D3D57F1B72A390003C5627 /* LaunchScreen.xib */,
@@ -109,6 +119,8 @@
 		02D3D5741B72A390003C5627 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				02AF4C521B7BC769006B809E /* Plus.png */,
+				02AF4C501B7BAE45006B809E /* Menu.png */,
 				02D3D59A1B72A966003C5627 /* download2.jpg */,
 				02D3D5981B72A74A003C5627 /* download.jpeg */,
 				02D3D5751B72A390003C5627 /* Info.plist */,
@@ -213,7 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AF4C511B7BAE45006B809E /* Menu.png in Resources */,
 				02D3D57C1B72A390003C5627 /* Main.storyboard in Resources */,
+				02AF4C531B7BC769006B809E /* Plus.png in Resources */,
 				02D3D5991B72A74A003C5627 /* download.jpeg in Resources */,
 				02D3D5811B72A390003C5627 /* LaunchScreen.xib in Resources */,
 				02D3D59B1B72A966003C5627 /* download2.jpg in Resources */,
@@ -239,8 +253,10 @@
 				02B55F011B750F4400981D23 /* CustomRefreshControl.swift in Sources */,
 				02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */,
 				02B55F051B75332900981D23 /* CreateEventViewController.swift in Sources */,
+				02AF4C571B7BE11B006B809E /* MenuViewController.swift in Sources */,
 				02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */,
 				02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */,
+				02AF4C551B7BD6D4006B809E /* CustomLeftToRightPushSegue.swift in Sources */,
 				EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

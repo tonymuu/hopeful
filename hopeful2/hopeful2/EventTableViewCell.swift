@@ -14,7 +14,13 @@ class EventTableViewCell: UITableViewCell {
     @IBOutlet weak var eventDetailView: UIView!
     @IBOutlet weak var frontViewContainer: UIView!
     @IBOutlet weak var frontView: UIImageView!
+    
+    @IBOutlet weak var hopeLabel: UILabel!
+    
+    @IBOutlet weak var startTimeLabel: UILabel!
 
+    @IBOutlet weak var endTimeLabel: UILabel!
+    
     var didSelect = false
     
     override func awakeFromNib() {
