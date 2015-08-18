@@ -12,8 +12,11 @@ class CreateEventTableViewController: UITableViewController {
         
         // The DatePickerCell.
         let datePickerCell = DatePickerCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
+        
+        let textEditCell = TextEditCell()
+        
         // Cells is a 2D array containing sections and rows.
-        cells = [[datePickerCell]]
+        cells = [[datePickerCell], [textEditCell]]
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -33,6 +36,9 @@ class CreateEventTableViewController: UITableViewController {
             var datePickerTableViewCell = cell as! DatePickerCell
             datePickerTableViewCell.selectedInTableView(tableView)
             self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
+        if (cell.isKindOfClass(TextEditCell)) {
+            var textEditingTableViewCell = cell as! DatePickerCell
         }
     }
     
