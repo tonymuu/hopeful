@@ -22,6 +22,8 @@
 		02D3D5991B72A74A003C5627 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D5981B72A74A003C5627 /* download.jpeg */; };
 		02D3D59B1B72A966003C5627 /* download2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D59A1B72A966003C5627 /* download2.jpg */; };
 		02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D59C1B73DD20003C5627 /* BackView.swift */; };
+		41033333E0D6CCEB0F61E8A7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77799C9F795926CA9CE07D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EA0541461B82B4D0001D4925 /* CreateEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0541451B82B4D0001D4925 /* CreateEventTableViewController.swift */; };
 		EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C86A41B7988C100510EC4 /* HopesLoader.swift */; };
 		EA4AAF541B77125E003EADBB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,10 @@
 		02D3D5981B72A74A003C5627 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		02D3D59A1B72A966003C5627 /* download2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download2.jpg; sourceTree = "<group>"; };
 		02D3D59C1B73DD20003C5627 /* BackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		1A77799C9F795926CA9CE07D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EDE1A036EE9276D6154301C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		869CE27A17220B2743703B13 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EA0541451B82B4D0001D4925 /* CreateEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventTableViewController.swift; sourceTree = "<group>"; };
 		EA0C86A41B7988C100510EC4 /* HopesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopesLoader.swift; sourceTree = "<group>"; };
 		EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41033333E0D6CCEB0F61E8A7 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +91,8 @@
 				02D3D5731B72A390003C5627 /* hopeful2 */,
 				02D3D5891B72A390003C5627 /* hopeful2Tests */,
 				02D3D5721B72A390003C5627 /* Products */,
+				9519075D4B2990BAC2F56E60 /* Pods */,
+				C6118DDEBE6750C34A3AF494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				EA0C86A41B7988C100510EC4 /* HopesLoader.swift */,
+				EA0541451B82B4D0001D4925 /* CreateEventTableViewController.swift */,
 				EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */,
 				02D3D59C1B73DD20003C5627 /* BackView.swift */,
 				02B55F041B75332900981D23 /* CreateEventViewController.swift */,
@@ -145,6 +155,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9519075D4B2990BAC2F56E60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				869CE27A17220B2743703B13 /* Pods.debug.xcconfig */,
+				3EDE1A036EE9276D6154301C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6118DDEBE6750C34A3AF494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A77799C9F795926CA9CE07D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02D3D5901B72A390003C5627 /* Build configuration list for PBXNativeTarget "hopeful2" */;
 			buildPhases = (
+				2597704AF9F4EC0715B3B8D3 /* Check Pods Manifest.lock */,
 				02D3D56D1B72A390003C5627 /* Sources */,
 				02D3D56E1B72A390003C5627 /* Frameworks */,
 				02D3D56F1B72A390003C5627 /* Resources */,
+				E032AB9F7C7A5BF37CA9D56E /* Embed Pods Frameworks */,
+				BA239502013FDFB180EF7A44 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +274,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2597704AF9F4EC0715B3B8D3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA239502013FDFB180EF7A44 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E032AB9F7C7A5BF37CA9D56E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02D3D56D1B72A390003C5627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,6 +333,7 @@
 				02B55F051B75332900981D23 /* CreateEventViewController.swift in Sources */,
 				02AF4C571B7BE11B006B809E /* MenuViewController.swift in Sources */,
 				02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */,
+				EA0541461B82B4D0001D4925 /* CreateEventTableViewController.swift in Sources */,
 				02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */,
 				02AF4C551B7BD6D4006B809E /* CustomLeftToRightPushSegue.swift in Sources */,
 				EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */,
@@ -382,6 +461,7 @@
 		};
 		02D3D5911B72A390003C5627 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 869CE27A17220B2743703B13 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hopeful2/Info.plist;
@@ -392,6 +472,7 @@
 		};
 		02D3D5921B72A390003C5627 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EDE1A036EE9276D6154301C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hopeful2/Info.plist;
