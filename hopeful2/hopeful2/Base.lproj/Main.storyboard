@@ -38,6 +38,7 @@
         <!--Create Event View Controller-->
         <scene sceneID="Ug5-Tx-o57">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUt-SG-0Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="bgi-GI-2cF" customClass="CreateEventViewController" customModule="hopeful2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OIg-gc-sIy"/>
@@ -52,12 +53,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="wmP-xq-3kL">
-                                <rect key="frame" x="0.0" y="116" width="600" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="461085820.903171">
-                                    <!--2015-08-12 15:23:40 +0000-->
-                                </date>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXR-5b-Vnc">
                                 <rect key="frame" x="282" y="532" width="37" height="30"/>
                                 <state key="normal" title="Done">
@@ -67,24 +62,31 @@
                                     <action selector="doneWasTapped:" destination="bgi-GI-2cF" eventType="touchUpInside" id="EX8-vv-vU1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71F-ia-Zah">
+                                <rect key="frame" x="121" y="189" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickdate:" destination="bgi-GI-2cF" eventType="touchUpInside" id="ijQ-Fi-jPH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1580248106873875" green="0.90799309871920053" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wmP-xq-3kL" firstAttribute="top" secondItem="RR5-vr-Mb6" secondAttribute="bottom" constant="16" id="6cl-5a-7Wy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RR5-vr-Mb6" secondAttribute="trailing" constant="16" id="Dg7-Qv-aMy"/>
-                            <constraint firstItem="wmP-xq-3kL" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leading" id="H9B-5e-nNM"/>
                             <constraint firstAttribute="centerX" secondItem="zXR-5b-Vnc" secondAttribute="centerX" id="Hgg-Uj-AbU"/>
                             <constraint firstAttribute="centerY" secondItem="zXR-5b-Vnc" secondAttribute="centerY" constant="-247" id="KGy-Hd-PL0"/>
+                            <constraint firstItem="71F-ia-Zah" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leadingMargin" constant="105" id="OLA-NK-bQz"/>
                             <constraint firstItem="RR5-vr-Mb6" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leadingMargin" constant="16" id="OSl-s3-eqL"/>
+                            <constraint firstItem="71F-ia-Zah" firstAttribute="top" secondItem="RR5-vr-Mb6" secondAttribute="bottom" constant="89" id="gMl-MV-5pX"/>
                             <constraint firstItem="RR5-vr-Mb6" firstAttribute="top" secondItem="OIg-gc-sIy" secondAttribute="bottom" constant="70" id="khM-1H-OY7"/>
-                            <constraint firstAttribute="trailing" secondItem="wmP-xq-3kL" secondAttribute="trailing" id="rBQ-2X-vio"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="hopeTextField" destination="RR5-vr-Mb6" id="xtV-6C-J7b"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AUt-SG-0Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5255" y="127"/>
         </scene>
@@ -178,7 +180,7 @@
                                     <outlet property="frontViewContainer" destination="Amq-Ml-Qkf" id="YJj-9u-OS2"/>
                                     <outlet property="hopeLabel" destination="QhW-mq-kAp" id="c5K-R9-2fb"/>
                                     <outlet property="startTimeLabel" destination="HVx-Z9-0fU" id="tgb-4F-VYM"/>
-                                    <segue destination="DUg-Dh-vza" kind="presentation" identifier="CreateEventSegue" modalTransitionStyle="crossDissolve" id="CdU-Io-13c"/>
+                                    <segue destination="bgi-GI-2cF" kind="presentation" identifier="CreateEventSegue" modalTransitionStyle="crossDissolve" id="vNB-yT-gD5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -22,11 +22,19 @@
 		02D3D5991B72A74A003C5627 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D5981B72A74A003C5627 /* download.jpeg */; };
 		02D3D59B1B72A966003C5627 /* download2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D3D59A1B72A966003C5627 /* download2.jpg */; };
 		02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3D59C1B73DD20003C5627 /* BackView.swift */; };
-		41033333E0D6CCEB0F61E8A7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77799C9F795926CA9CE07D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		41033333E0D6CCEB0F61E8A7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77799C9F795926CA9CE07D /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		EA0541461B82B4D0001D4925 /* CreateEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0541451B82B4D0001D4925 /* CreateEventTableViewController.swift */; };
 		EA0541581B82C743001D4925 /* TextEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0541571B82C743001D4925 /* TextEditCell.swift */; };
 		EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C86A41B7988C100510EC4 /* HopesLoader.swift */; };
 		EA4AAF541B77125E003EADBB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */; };
+		EA8CA8571B842F9200459D7E /* HSDatePickerViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8CA8561B842F9200459D7E /* HSDatePickerViewController.framework */; };
+		EA8CA86B1B8432E800459D7E /* HSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8CA85F1B8432E800459D7E /* HSDatePickerViewController.m */; };
+		EA8CA86C1B8432E800459D7E /* HSDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8CA8601B8432E800459D7E /* HSDatePickerViewController.xib */; };
+		EA8CA86D1B8432E800459D7E /* HSDatePickerViewController.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = EA8CA8621B8432E800459D7E /* HSDatePickerViewController.modulemap */; };
+		EA8CA86E1B8432E800459D7E /* HSDatePickerViewController.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EA8CA8631B8432E800459D7E /* HSDatePickerViewController.xcconfig */; };
+		EA8CA86F1B8432E800459D7E /* HSDatePickerViewController-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EA8CA8641B8432E800459D7E /* HSDatePickerViewController-Private.xcconfig */; };
+		EA8CA8701B8432E800459D7E /* HSDatePickerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8CA8651B8432E800459D7E /* HSDatePickerViewController-dummy.m */; };
+		EA8CA8711B8432E800459D7E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA8CA8681B8432E800459D7E /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,18 @@
 		EA0541571B82C743001D4925 /* TextEditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEditCell.swift; sourceTree = "<group>"; };
 		EA0C86A41B7988C100510EC4 /* HopesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopesLoader.swift; sourceTree = "<group>"; };
 		EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		EA8CA8561B842F9200459D7E /* HSDatePickerViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSDatePickerViewController.framework; path = "Pods/../build/Debug-iphoneos/HSDatePickerViewController.framework"; sourceTree = "<group>"; };
+		EA8CA85E1B8432E800459D7E /* HSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSDatePickerViewController.h; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.h; sourceTree = "<group>"; };
+		EA8CA85F1B8432E800459D7E /* HSDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSDatePickerViewController.m; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.m; sourceTree = "<group>"; };
+		EA8CA8601B8432E800459D7E /* HSDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HSDatePickerViewController.xib; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.xib; sourceTree = "<group>"; };
+		EA8CA8621B8432E800459D7E /* HSDatePickerViewController.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = HSDatePickerViewController.modulemap; sourceTree = "<group>"; };
+		EA8CA8631B8432E800459D7E /* HSDatePickerViewController.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HSDatePickerViewController.xcconfig; sourceTree = "<group>"; };
+		EA8CA8641B8432E800459D7E /* HSDatePickerViewController-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "HSDatePickerViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		EA8CA8651B8432E800459D7E /* HSDatePickerViewController-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HSDatePickerViewController-dummy.m"; sourceTree = "<group>"; };
+		EA8CA8661B8432E800459D7E /* HSDatePickerViewController-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HSDatePickerViewController-prefix.pch"; sourceTree = "<group>"; };
+		EA8CA8671B8432E800459D7E /* HSDatePickerViewController-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HSDatePickerViewController-umbrella.h"; sourceTree = "<group>"; };
+		EA8CA8681B8432E800459D7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8CA8721B8432F700459D7E /* hopeful2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "hopeful2-Bridging-Header.h"; path = "hopeful2/hopeful2-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8CA8571B842F9200459D7E /* HSDatePickerViewController.framework in Frameworks */,
 				41033333E0D6CCEB0F61E8A7 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +111,7 @@
 		02D3D5681B72A390003C5627 = {
 			isa = PBXGroup;
 			children = (
+				EA8CA8721B8432F700459D7E /* hopeful2-Bridging-Header.h */,
 				02D3D5731B72A390003C5627 /* hopeful2 */,
 				02D3D5891B72A390003C5627 /* hopeful2Tests */,
 				02D3D5721B72A390003C5627 /* Products */,
@@ -125,6 +147,7 @@
 				02D3D57F1B72A390003C5627 /* LaunchScreen.xib */,
 				02D3D5741B72A390003C5627 /* Supporting Files */,
 				EA0541571B82C743001D4925 /* TextEditCell.swift */,
+				EA8CA86A1B8432E800459D7E /* HSDatePickerViewController */,
 			);
 			path = hopeful2;
 			sourceTree = "<group>";
@@ -170,9 +193,45 @@
 		C6118DDEBE6750C34A3AF494 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA8CA8561B842F9200459D7E /* HSDatePickerViewController.framework */,
 				1A77799C9F795926CA9CE07D /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA8CA8611B8432E800459D7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA8CA8601B8432E800459D7E /* HSDatePickerViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EA8CA8691B8432E800459D7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA8CA8621B8432E800459D7E /* HSDatePickerViewController.modulemap */,
+				EA8CA8631B8432E800459D7E /* HSDatePickerViewController.xcconfig */,
+				EA8CA8641B8432E800459D7E /* HSDatePickerViewController-Private.xcconfig */,
+				EA8CA8651B8432E800459D7E /* HSDatePickerViewController-dummy.m */,
+				EA8CA8661B8432E800459D7E /* HSDatePickerViewController-prefix.pch */,
+				EA8CA8671B8432E800459D7E /* HSDatePickerViewController-umbrella.h */,
+				EA8CA8681B8432E800459D7E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HSDatePickerViewController";
+			sourceTree = "<group>";
+		};
+		EA8CA86A1B8432E800459D7E /* HSDatePickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA8CA85E1B8432E800459D7E /* HSDatePickerViewController.h */,
+				EA8CA85F1B8432E800459D7E /* HSDatePickerViewController.m */,
+				EA8CA8611B8432E800459D7E /* Resources */,
+				EA8CA8691B8432E800459D7E /* Support Files */,
+			);
+			name = HSDatePickerViewController;
+			path = ../Pods/HSDatePickerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +318,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02AF4C511B7BAE45006B809E /* Menu.png in Resources */,
+				EA8CA86E1B8432E800459D7E /* HSDatePickerViewController.xcconfig in Resources */,
+				EA8CA86F1B8432E800459D7E /* HSDatePickerViewController-Private.xcconfig in Resources */,
 				02D3D57C1B72A390003C5627 /* Main.storyboard in Resources */,
 				02AF4C531B7BC769006B809E /* Plus.png in Resources */,
 				02D3D5991B72A74A003C5627 /* download.jpeg in Resources */,
 				02D3D5811B72A390003C5627 /* LaunchScreen.xib in Resources */,
+				EA8CA86C1B8432E800459D7E /* HSDatePickerViewController.xib in Resources */,
+				EA8CA8711B8432E800459D7E /* Info.plist in Resources */,
 				02D3D59B1B72A966003C5627 /* download2.jpg in Resources */,
 				02D3D57E1B72A390003C5627 /* Images.xcassets in Resources */,
 			);
@@ -331,6 +394,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA4AAF541B77125E003EADBB /* EventTableViewCell.swift in Sources */,
+				EA8CA86D1B8432E800459D7E /* HSDatePickerViewController.modulemap in Sources */,
+				EA8CA86B1B8432E800459D7E /* HSDatePickerViewController.m in Sources */,
 				02B55F011B750F4400981D23 /* CustomRefreshControl.swift in Sources */,
 				02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */,
 				02B55F051B75332900981D23 /* CreateEventViewController.swift in Sources */,
@@ -340,6 +405,7 @@
 				EA0541461B82B4D0001D4925 /* CreateEventTableViewController.swift in Sources */,
 				02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */,
 				02AF4C551B7BD6D4006B809E /* CustomLeftToRightPushSegue.swift in Sources */,
+				EA8CA8701B8432E800459D7E /* HSDatePickerViewController-dummy.m in Sources */,
 				EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,9 +534,16 @@
 			baseConfigurationReference = 869CE27A17220B2743703B13 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = hopeful2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hopeful2/hopeful2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -479,9 +552,15 @@
 			baseConfigurationReference = 3EDE1A036EE9276D6154301C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = hopeful2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hopeful2/hopeful2-Bridging-Header.h";
 			};
 			name = Release;
 		};

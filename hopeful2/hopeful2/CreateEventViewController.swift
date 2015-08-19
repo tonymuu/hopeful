@@ -22,8 +22,24 @@ class CreateEventViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func pickdate(sender: AnyObject) {
+        
+        let hsdpvc = HSDatePickerViewController()
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        let beView = UIVisualEffectView(effect: blurEffect)
+        
+        hsdpvc.view.backgroundColor = UIColor.clearColor()
+        hsdpvc.view.insertSubview(beView, atIndex: 0)
+        hsdpvc.modalPresentationStyle = UIModalPresentationStyle.CurrentContext
+
+        hsdpvc.mainColor = UIColor.whiteColor()
+        
+        self.presentViewController(hsdpvc, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         
         let fileManager = NSFileManager.defaultManager()
