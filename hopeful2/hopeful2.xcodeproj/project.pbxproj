@@ -27,6 +27,7 @@
 		EA0541581B82C743001D4925 /* TextEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0541571B82C743001D4925 /* TextEditCell.swift */; };
 		EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C86A41B7988C100510EC4 /* HopesLoader.swift */; };
 		EA4AAF541B77125E003EADBB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */; };
+		EA77A79E1B858D8800A1BC49 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = EA77A79D1B858D8800A1BC49 /* calendar.png */; };
 		EA8CA8571B842F9200459D7E /* HSDatePickerViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8CA8561B842F9200459D7E /* HSDatePickerViewController.framework */; };
 		EA8CA86B1B8432E800459D7E /* HSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8CA85F1B8432E800459D7E /* HSDatePickerViewController.m */; };
 		EA8CA86C1B8432E800459D7E /* HSDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8CA8601B8432E800459D7E /* HSDatePickerViewController.xib */; };
@@ -74,6 +75,7 @@
 		EA0541571B82C743001D4925 /* TextEditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEditCell.swift; sourceTree = "<group>"; };
 		EA0C86A41B7988C100510EC4 /* HopesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopesLoader.swift; sourceTree = "<group>"; };
 		EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		EA77A79D1B858D8800A1BC49 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		EA8CA8561B842F9200459D7E /* HSDatePickerViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSDatePickerViewController.framework; path = "Pods/../build/Debug-iphoneos/HSDatePickerViewController.framework"; sourceTree = "<group>"; };
 		EA8CA85E1B8432E800459D7E /* HSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSDatePickerViewController.h; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.h; sourceTree = "<group>"; };
 		EA8CA85F1B8432E800459D7E /* HSDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSDatePickerViewController.m; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.m; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		02D3D5741B72A390003C5627 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA77A79D1B858D8800A1BC49 /* calendar.png */,
 				02AF4C521B7BC769006B809E /* Plus.png */,
 				02AF4C501B7BAE45006B809E /* Menu.png */,
 				02D3D59A1B72A966003C5627 /* download2.jpg */,
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02AF4C511B7BAE45006B809E /* Menu.png in Resources */,
+				EA77A79E1B858D8800A1BC49 /* calendar.png in Resources */,
 				EA8CA86E1B8432E800459D7E /* HSDatePickerViewController.xcconfig in Resources */,
 				EA8CA86F1B8432E800459D7E /* HSDatePickerViewController-Private.xcconfig in Resources */,
 				02D3D57C1B72A390003C5627 /* Main.storyboard in Resources */,

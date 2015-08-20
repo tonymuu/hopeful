@@ -38,7 +38,6 @@
         <!--Create Event View Controller-->
         <scene sceneID="Ug5-Tx-o57">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AUt-SG-0Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="bgi-GI-2cF" customClass="CreateEventViewController" customModule="hopeful2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OIg-gc-sIy"/>
@@ -48,10 +47,10 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RR5-vr-Mb6">
-                                <rect key="frame" x="32" y="70" width="536" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name your hope here..." clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RR5-vr-Mb6">
+                                <rect key="frame" x="32" y="90" width="536" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXR-5b-Vnc">
                                 <rect key="frame" x="282" y="532" width="37" height="30"/>
@@ -62,9 +61,13 @@
                                     <action selector="doneWasTapped:" destination="bgi-GI-2cF" eventType="touchUpInside" id="EX8-vv-vU1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71F-ia-Zah">
-                                <rect key="frame" x="121" y="189" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71F-ia-Zah">
+                                <rect key="frame" x="32" y="213" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="00I-O8-rEU"/>
+                                    <constraint firstAttribute="height" constant="56" id="Fy1-Z6-PDf"/>
+                                </constraints>
+                                <state key="normal" image="calendar.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -77,9 +80,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="RR5-vr-Mb6" secondAttribute="trailing" constant="16" id="Dg7-Qv-aMy"/>
                             <constraint firstAttribute="centerX" secondItem="zXR-5b-Vnc" secondAttribute="centerX" id="Hgg-Uj-AbU"/>
                             <constraint firstAttribute="centerY" secondItem="zXR-5b-Vnc" secondAttribute="centerY" constant="-247" id="KGy-Hd-PL0"/>
-                            <constraint firstItem="71F-ia-Zah" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leadingMargin" constant="105" id="OLA-NK-bQz"/>
                             <constraint firstItem="RR5-vr-Mb6" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leadingMargin" constant="16" id="OSl-s3-eqL"/>
-                            <constraint firstItem="71F-ia-Zah" firstAttribute="top" secondItem="RR5-vr-Mb6" secondAttribute="bottom" constant="89" id="gMl-MV-5pX"/>
+                            <constraint firstItem="71F-ia-Zah" firstAttribute="top" secondItem="RR5-vr-Mb6" secondAttribute="bottom" constant="93" id="Tdf-Id-0JQ"/>
+                            <constraint firstItem="71F-ia-Zah" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leadingMargin" constant="16" id="bs6-Vr-IUj"/>
                             <constraint firstItem="RR5-vr-Mb6" firstAttribute="top" secondItem="OIg-gc-sIy" secondAttribute="bottom" constant="70" id="khM-1H-OY7"/>
                         </constraints>
                     </view>
@@ -87,6 +90,7 @@
                         <outlet property="hopeTextField" destination="RR5-vr-Mb6" id="xtV-6C-J7b"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUt-SG-0Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5255" y="127"/>
         </scene>
@@ -302,5 +306,6 @@
     <resources>
         <image name="Menu.png" width="50" height="50"/>
         <image name="Plus.png" width="50" height="50"/>
+        <image name="calendar.png" width="128" height="128"/>
     </resources>
 </document>
