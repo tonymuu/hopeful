@@ -25,23 +25,26 @@ class CreateEventViewController: UIViewController {
     @IBAction func pickdate(sender: AnyObject) {
         
         let hsdpvc = HSDatePickerViewController()
-//        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-//        let beView = UIVisualEffectView(effect: blurEffect)
-//        
-//        hsdpvc.view.backgroundColor = UIColor.clearColor()
-//        hsdpvc.view.insertSubview(beView, atIndex: 0)
-//        hsdpvc.modalPresentationStyle = UIModalPresentationStyle.CurrentContext
-//
         hsdpvc.mainColor = UIColor.blackColor()
         
         self.presentViewController(hsdpvc, animated: true, completion: nil)
     }
     
+    @IBAction func pickImage(sender: AnyObject) {
+        let ipvc = UIImagePickerController()
+        
+        UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum)
+//        UIImagePickerController.availableMediaTypesForSourceType(UIImagePickerControllerSourceType.SavedPhotosAlbum)
+        
+        ipvc.mediaTypes = UIImagePickerController.availableMediaTypesForSourceType(UIImagePickerControllerSourceType.SavedPhotosAlbum)!
+        
+        self.presentViewController(ipvc, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+                
         let fileManager = NSFileManager.defaultManager()
         
         paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true) as Array

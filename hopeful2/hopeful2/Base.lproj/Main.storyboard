@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="70X-zN-A15">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Create Event Table View Controller-->
@@ -47,13 +46,8 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name your hope here..." clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RR5-vr-Mb6">
-                                <rect key="frame" x="32" y="90" width="536" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXR-5b-Vnc">
-                                <rect key="frame" x="282" y="532" width="37" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXR-5b-Vnc">
+                                <rect key="frame" x="282" y="541" width="37" height="12"/>
                                 <state key="normal" title="Done">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -61,33 +55,86 @@
                                     <action selector="doneWasTapped:" destination="bgi-GI-2cF" eventType="touchUpInside" id="EX8-vv-vU1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71F-ia-Zah">
-                                <rect key="frame" x="32" y="213" width="56" height="56"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-Ho-4zx">
+                                <rect key="frame" x="16" y="36" width="568" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What's your hopes?" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LXJ-wU-sX5" customClass="JiroTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="ZyN-dI-T2m"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="00I-O8-rEU"/>
-                                    <constraint firstAttribute="height" constant="56" id="Fy1-Z6-PDf"/>
+                                    <constraint firstAttribute="bottom" secondItem="LXJ-wU-sX5" secondAttribute="bottom" id="Sgl-Ne-y62"/>
+                                    <constraint firstAttribute="trailing" secondItem="LXJ-wU-sX5" secondAttribute="trailing" id="U74-Ed-7f5"/>
+                                    <constraint firstItem="LXJ-wU-sX5" firstAttribute="leading" secondItem="Mch-Ho-4zx" secondAttribute="leading" id="WOt-nJ-jGN"/>
+                                    <constraint firstItem="LXJ-wU-sX5" firstAttribute="top" secondItem="Mch-Ho-4zx" secondAttribute="top" id="dNT-sF-ZiV"/>
                                 </constraints>
-                                <state key="normal" image="calendar.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pickdate:" destination="bgi-GI-2cF" eventType="touchUpInside" id="ijQ-Fi-jPH"/>
-                                </connections>
-                            </button>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CnO-VV-UGw">
+                                <rect key="frame" x="16" y="153" width="568" height="104"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71F-ia-Zah">
+                                        <rect key="frame" x="32" y="16" width="72" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="00I-O8-rEU"/>
+                                            <constraint firstAttribute="height" constant="72" id="Fy1-Z6-PDf"/>
+                                        </constraints>
+                                        <state key="normal" image="calendar.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pickdate:" destination="bgi-GI-2cF" eventType="touchUpInside" id="ijQ-Fi-jPH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoa-tn-Drg">
+                                        <rect key="frame" x="464" y="16" width="72" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="7Dr-ty-CBF"/>
+                                            <constraint firstAttribute="width" constant="72" id="hog-Qc-vFl"/>
+                                        </constraints>
+                                        <state key="normal" image="images.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pickImage:" destination="bgi-GI-2cF" eventType="touchUpInside" id="r6N-Ty-wwC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uoa-tn-Drg" firstAttribute="top" secondItem="CnO-VV-UGw" secondAttribute="top" constant="16" id="17p-XO-D3J"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uoa-tn-Drg" secondAttribute="trailing" constant="32" id="1eo-ka-6Gp"/>
+                                    <constraint firstItem="71F-ia-Zah" firstAttribute="top" secondItem="CnO-VV-UGw" secondAttribute="top" constant="16" id="5kv-qX-hFq"/>
+                                    <constraint firstItem="71F-ia-Zah" firstAttribute="leading" secondItem="CnO-VV-UGw" secondAttribute="leading" constant="32" id="QXH-MV-2LV"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.1580248106873875" green="0.90799309871920053" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="RR5-vr-Mb6" secondAttribute="trailing" constant="16" id="Dg7-Qv-aMy"/>
+                            <constraint firstAttribute="trailing" secondItem="Mch-Ho-4zx" secondAttribute="trailing" constant="16" id="1gk-92-LUG"/>
+                            <constraint firstItem="zXR-5b-Vnc" firstAttribute="top" secondItem="CnO-VV-UGw" secondAttribute="bottom" constant="284" id="9aF-oJ-S5T"/>
                             <constraint firstAttribute="centerX" secondItem="zXR-5b-Vnc" secondAttribute="centerX" id="Hgg-Uj-AbU"/>
+                            <constraint firstItem="CnO-VV-UGw" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leading" constant="16" id="JcA-zg-vIY"/>
                             <constraint firstAttribute="centerY" secondItem="zXR-5b-Vnc" secondAttribute="centerY" constant="-247" id="KGy-Hd-PL0"/>
-                            <constraint firstItem="RR5-vr-Mb6" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leadingMargin" constant="16" id="OSl-s3-eqL"/>
-                            <constraint firstItem="71F-ia-Zah" firstAttribute="top" secondItem="RR5-vr-Mb6" secondAttribute="bottom" constant="93" id="Tdf-Id-0JQ"/>
-                            <constraint firstItem="71F-ia-Zah" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leadingMargin" constant="16" id="bs6-Vr-IUj"/>
-                            <constraint firstItem="RR5-vr-Mb6" firstAttribute="top" secondItem="OIg-gc-sIy" secondAttribute="bottom" constant="70" id="khM-1H-OY7"/>
+                            <constraint firstItem="Mch-Ho-4zx" firstAttribute="leading" secondItem="zl4-EA-vVR" secondAttribute="leading" constant="16" id="PGA-p0-jGf"/>
+                            <constraint firstItem="CnO-VV-UGw" firstAttribute="top" secondItem="Mch-Ho-4zx" secondAttribute="bottom" constant="53" id="TXe-JH-Dfa"/>
+                            <constraint firstItem="Mch-Ho-4zx" firstAttribute="top" secondItem="OIg-gc-sIy" secondAttribute="bottom" constant="16" id="dow-ER-muu"/>
+                            <constraint firstAttribute="trailing" secondItem="CnO-VV-UGw" secondAttribute="trailing" constant="16" id="j8G-hh-eIM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="hopeTextField" destination="RR5-vr-Mb6" id="xtV-6C-J7b"/>
+                        <outlet property="hopeTextField" destination="LXJ-wU-sX5" id="o3b-xR-Yv0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUt-SG-0Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -307,5 +354,6 @@
         <image name="Menu.png" width="50" height="50"/>
         <image name="Plus.png" width="50" height="50"/>
         <image name="calendar.png" width="128" height="128"/>
+        <image name="images.png" width="225" height="225"/>
     </resources>
 </document>
