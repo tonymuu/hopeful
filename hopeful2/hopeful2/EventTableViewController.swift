@@ -4,17 +4,7 @@ import UIKit
 class EventTableViewController: UITableViewController, UIScrollViewDelegate, UITableViewDelegate {
     
     var isAtTop = true
-    
-    @IBAction func createEvent() {
-        if(isAtTop) {
-            println("is at top and pull down")
-//            self.prepareForSegue(UIStoryboardSegue(identifier: "CreateEventSegue", source: self, destination: CreateEventViewController()), sender: self.navigationItem)
-//            self.performSegueWithIdentifier("CreateEventSegue", sender: self)
-//            self.refreshControl?.endRefreshing()
-            
-        }
-    }
-    
+        
     @IBAction func showMenu(sender: AnyObject) {
         self.performSegueWithIdentifier("ShowMenuSegue", sender: sender.barButtonItem)
         
