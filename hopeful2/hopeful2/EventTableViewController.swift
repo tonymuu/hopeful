@@ -8,9 +8,11 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
     @IBAction func createEvent() {
         if(isAtTop) {
             println("is at top and pull down")
-            self.performSegueWithIdentifier("CreateEventSegue", sender: self)
-            self.refreshControl?.endRefreshing()
-        }        
+//            self.prepareForSegue(UIStoryboardSegue(identifier: "CreateEventSegue", source: self, destination: CreateEventViewController()), sender: self.navigationItem)
+//            self.performSegueWithIdentifier("CreateEventSegue", sender: self)
+//            self.refreshControl?.endRefreshing()
+            
+        }
     }
     
     @IBAction func showMenu(sender: AnyObject) {
@@ -25,11 +27,6 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
         super.viewDidLoad()
         
         // initialize initial dictionary - default dictionary with attractive pictures/contents
-
-        self.refreshControl = UIRefreshControl()
-        self.refreshControl?.attributedTitle = NSAttributedString(string: "pull down to create")
-        self.refreshControl?.tintColor = UIColor.whiteColor()
-        self.refreshControl?.addTarget(self, action: "createEvent", forControlEvents: UIControlEvents.ValueChanged)
         
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -61,29 +58,38 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventTableViewCell
+        cell.frontViewContainer.frame.size = CGSize(width: cell.frame.size.width/2, height: cell.frontViewContainer.frame.size.height)
+        cell.frontView.frame.size = CGSize(width: cell.frame.size.width/2, height: cell.frontViewContainer.frame.size.height)
+        cell.eventPhotoView.frame.size = CGSize(width: cell.frame.size.width/2, height: cell.frontViewContainer.frame.size.height)
         
-            cell.frontViewContainer.frame.size = CGSize(width: cell.frame.size.width/2, height: cell.frontViewContainer.frame.size.height)
-            cell.frontView.frame.size = CGSize(width: cell.frame.size.width/2, height: cell.frontViewContainer.frame.size.height)
-            cell.eventPhotoView.frame.size = CGSize(width: cell.frame.size.width/2, height: cell.frontViewContainer.frame.size.height)
-
-
-            cell.frontView.image = UIImage(named: "download.jpeg")
-            cell.eventPhotoView.image = UIImage(named: "download2.jpg")
-            
-            cell.frontView.contentMode = UIViewContentMode.ScaleAspectFill
-            cell.eventPhotoView.contentMode = UIViewContentMode.ScaleAspectFill
-            cell.frontViewContainer.contentMode = UIViewContentMode.ScaleAspectFill
-            
-            cell.frontView.clipsToBounds = true
-            cell.eventPhotoView.clipsToBounds = true
-            cell.frontViewContainer.clipsToBounds = true
-            
-            showPhotoView(cell)
         
-//            UIView.animateWithDuration(6.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut | UIViewAnimationOptions.Autoreverse, animations: {
-//                cell.frontViewContainer.frame.size = CGSize(width: cell.eventPhotoView.frame.size.width, height: cell.frontViewContainer.frame.size.height)
-//                }, completion: nil)
-            
+        cell.frontView.image = UIImage(named: "download.jpeg")
+        cell.eventPhotoView.image = UIImage(named: "download2.jpg")
+        
+        cell.frontView.contentMode = UIViewContentMode.ScaleAspectFill
+        cell.eventPhotoView.contentMode = UIViewContentMode.ScaleAspectFill
+        cell.frontViewContainer.contentMode = UIViewContentMode.ScaleAspectFill
+        
+        cell.frontView.clipsToBounds = true
+        cell.eventPhotoView.clipsToBounds = true
+        cell.frontViewContainer.clipsToBounds = true
+        
+        cell.hopeLabel.text = cell.hopeLabel.text?.stringByAppendingString(": aaaaaa")
+        cell.startTimeLabel.text = cell.startTimeLabel.text?.stringByAppendingString(": ")
+        cell.endTimeLabel.text = cell.endTimeLabel.text?.stringByAppendingString(": ")
+        
+        
+//        println("\(HopesLoader.loadHopes(ForIndexPath: indexPath))")
+        
+        
+        showPhotoView(cell)
+        
+        UIView.animateWithDuration(6.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut | UIViewAnimationOptions.Autoreverse, animations: {
+            cell.frontViewContainer.frame.size = CGSize(width: cell.eventPhotoView.frame.size.width, height: cell.frontViewContainer.frame.size.height)
+            }, completion: nil)
+        
+        println("")
+        
        return cell
     }
     
@@ -97,12 +103,10 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
                 UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
                     self.showDetailView(cell)
                     }, completion: nil)
-                cell.didSelect = true
             } else {
                 UIView.transitionWithView(cell.contentView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, animations: {
                     self.showPhotoView(cell)
                     }, completion: nil)
-                cell.didSelect = false
             }
         }
     }
@@ -112,6 +116,8 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
         cell.frontViewContainer.hidden = false
         cell.frontView.hidden = false
         cell.eventDetailView.hidden = true
+        
+        cell.didSelect = false
 
     }
     
@@ -121,6 +127,7 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
         cell.frontView.hidden = true
         cell.eventDetailView.hidden = false
 
+        cell.didSelect = true
     }
     
 }

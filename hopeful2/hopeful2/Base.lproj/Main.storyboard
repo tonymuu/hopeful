@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUt-SG-0Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5255" y="127"/>
+            <point key="canvasLocation" x="4408" y="223"/>
         </scene>
         <!--Event Table View Controller-->
         <scene sceneID="vyF-Zz-A5o">
@@ -231,7 +231,6 @@
                                     <outlet property="frontViewContainer" destination="Amq-Ml-Qkf" id="YJj-9u-OS2"/>
                                     <outlet property="hopeLabel" destination="QhW-mq-kAp" id="c5K-R9-2fb"/>
                                     <outlet property="startTimeLabel" destination="HVx-Z9-0fU" id="tgb-4F-VYM"/>
-                                    <segue destination="bgi-GI-2cF" kind="presentation" identifier="CreateEventSegue" modalTransitionStyle="crossDissolve" id="vNB-yT-gD5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -252,7 +251,8 @@
                             <inset key="imageInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
-                                <action selector="createEvent" destination="yeI-P7-iQR" id="bGp-hd-wzD"/>
+                                <action selector="createEvent" destination="yeI-P7-iQR" id="7IV-2Y-w4x"/>
+                                <segue destination="bgi-GI-2cF" kind="presentation" identifier="CreateEventSegue" id="bqf-zu-5Zf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

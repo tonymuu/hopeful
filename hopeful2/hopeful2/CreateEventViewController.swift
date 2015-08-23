@@ -1,6 +1,10 @@
 import UIKit
+import BSImagePicker
+import Photos
 
 class CreateEventViewController: UIViewController {
+    let apiKey = "2e9a9f67125e8bcd48aa93a806495dba"
+    let secret = "b80c63128f3ad229"
     
     @IBOutlet weak var hopeTextField: UITextField!
     
@@ -31,14 +35,33 @@ class CreateEventViewController: UIViewController {
     }
     
     @IBAction func pickImage(sender: AnyObject) {
-        let ipvc = UIImagePickerController()
         
-        UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum)
-//        UIImagePickerController.availableMediaTypesForSourceType(UIImagePickerControllerSourceType.SavedPhotosAlbum)
+        let fetchOptions = PHFetchOptions()
         
-        ipvc.mediaTypes = UIImagePickerController.availableMediaTypesForSourceType(UIImagePickerControllerSourceType.SavedPhotosAlbum)!
+        let cameraRollCollection = PHAssetCollection.fetchAssetCollectionsWithType(.SmartAlbum, subtype: .SmartAlbumUserLibrary, options: fetchOptions).objectAtIndex(0) as! PHAssetCollection
         
-        self.presentViewController(ipvc, animated: true, completion: nil)
+        let assets = PHAsset.fetchAssetsInAssetCollection(cameraRollCollection, options: fetchOptions)
+        let first = assets.objectAtIndex(0) as! PHAsset
+        let second = assets.objectAtIndex(0) as! PHAsset
+        let third = assets.objectAtIndex(0) as! PHAsset
+        
+        let selectedAssets = [first, second, third]
+        
+        
+        let transientCollection = PHAssetCollection.transientAssetCollectionWithAssets(selectedAssets, title: "Custom Album")
+        
+        let ipvc: BSImagePickerViewController = BSImagePickerViewController(assetCollection: transientCollection, selections: selectedAssets)
+        
+        bs_presentImagePickerController(ipvc, animated: true,
+            select: { (asset: PHAsset) -> Void in
+                println("select")
+            }, deselect: { (asset: PHAsset) -> Void in
+                println("deselect")
+            }, cancel: { (assets: [PHAsset]) -> Void in
+                println("cancel")
+            }, finish: { (assets: [PHAsset]) -> Void in
+                println("finish")
+            }, completion: nil)
     }
     
     
