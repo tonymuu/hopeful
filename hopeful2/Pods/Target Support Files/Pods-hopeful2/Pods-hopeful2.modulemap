@@ -1,0 +1,6 @@
+framework module Pods_hopeful2 {
+  umbrella header "Pods-hopeful2-umbrella.h"
+
+  export *
+  module * { export * }
+}

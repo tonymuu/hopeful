@@ -27,8 +27,7 @@
 		EA0541461B82B4D0001D4925 /* CreateEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0541451B82B4D0001D4925 /* CreateEventTableViewController.swift */; };
 		EA0541581B82C743001D4925 /* TextEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0541571B82C743001D4925 /* TextEditCell.swift */; };
 		EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C86A41B7988C100510EC4 /* HopesLoader.swift */; };
-		EA22BF9C1B86B3530076287A /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22BF9B1B86B3530076287A /* JiroTextField.swift */; };
-		EA22BF9E1B86B39C0076287A /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22BF9D1B86B39C0076287A /* TextFieldEffects.swift */; };
+		EA3AE6631B8BFEDF007ABFCD /* TableViewCellFlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3AE6621B8BFEDF007ABFCD /* TableViewCellFlip.swift */; };
 		EA4AAF541B77125E003EADBB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */; };
 		EA77A79E1B858D8800A1BC49 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = EA77A79D1B858D8800A1BC49 /* calendar.png */; };
 		EA8CA8571B842F9200459D7E /* HSDatePickerViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8CA8561B842F9200459D7E /* HSDatePickerViewController.framework */; };
@@ -80,8 +79,7 @@
 		EA0541451B82B4D0001D4925 /* CreateEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventTableViewController.swift; sourceTree = "<group>"; };
 		EA0541571B82C743001D4925 /* TextEditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEditCell.swift; sourceTree = "<group>"; };
 		EA0C86A41B7988C100510EC4 /* HopesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopesLoader.swift; sourceTree = "<group>"; };
-		EA22BF9B1B86B3530076287A /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
-		EA22BF9D1B86B39C0076287A /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		EA3AE6621B8BFEDF007ABFCD /* TableViewCellFlip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellFlip.swift; sourceTree = "<group>"; };
 		EA4AAF531B77125E003EADBB /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		EA77A79D1B858D8800A1BC49 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		EA8CA8561B842F9200459D7E /* HSDatePickerViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSDatePickerViewController.framework; path = "Pods/../build/Debug-iphoneos/HSDatePickerViewController.framework"; sourceTree = "<group>"; };
@@ -161,8 +159,7 @@
 				02D3D5741B72A390003C5627 /* Supporting Files */,
 				EA0541571B82C743001D4925 /* TextEditCell.swift */,
 				EA8CA86A1B8432E800459D7E /* HSDatePickerViewController */,
-				EA22BF9B1B86B3530076287A /* JiroTextField.swift */,
-				EA22BF9D1B86B39C0076287A /* TextFieldEffects.swift */,
+				EA3AE6621B8BFEDF007ABFCD /* TableViewCellFlip.swift */,
 			);
 			path = hopeful2;
 			sourceTree = "<group>";
@@ -418,6 +415,7 @@
 				EA4AAF541B77125E003EADBB /* EventTableViewCell.swift in Sources */,
 				EA8CA86D1B8432E800459D7E /* HSDatePickerViewController.modulemap in Sources */,
 				EA8CA86B1B8432E800459D7E /* HSDatePickerViewController.m in Sources */,
+				EA3AE6631B8BFEDF007ABFCD /* TableViewCellFlip.swift in Sources */,
 				02B55F011B750F4400981D23 /* CustomRefreshControl.swift in Sources */,
 				02D3D59D1B73DD20003C5627 /* BackView.swift in Sources */,
 				02B55F051B75332900981D23 /* CreateEventViewController.swift in Sources */,
@@ -425,9 +423,7 @@
 				02D3D5971B72A534003C5627 /* EventTableViewController.swift in Sources */,
 				EA0541581B82C743001D4925 /* TextEditCell.swift in Sources */,
 				EA0541461B82B4D0001D4925 /* CreateEventTableViewController.swift in Sources */,
-				EA22BF9E1B86B39C0076287A /* TextFieldEffects.swift in Sources */,
 				02D3D5771B72A390003C5627 /* AppDelegate.swift in Sources */,
-				EA22BF9C1B86B3530076287A /* JiroTextField.swift in Sources */,
 				02AF4C551B7BD6D4006B809E /* CustomLeftToRightPushSegue.swift in Sources */,
 				EA8CA8701B8432E800459D7E /* HSDatePickerViewController-dummy.m in Sources */,
 				EA0C86A51B7988C100510EC4 /* HopesLoader.swift in Sources */,

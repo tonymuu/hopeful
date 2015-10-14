@@ -1,0 +1,19 @@
+PODS:
+  - BSImagePicker (1.4.1):
+    - UIImageViewModeScaleAspect (~> 1.3)
+  - HSDatePickerViewController (1.0.1)
+  - TextFieldEffects (0.4.1)
+  - UIImageViewModeScaleAspect (1.3)
+
+DEPENDENCIES:
+  - BSImagePicker (~> 1.4.0)
+  - HSDatePickerViewController (~> 1.0)
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  BSImagePicker: 2f00fbbeec9925e896a77a7017f5b17aa792a8b1
+  HSDatePickerViewController: b292f2a53b2644a68aa5e1343053d2f3554de64c
+  TextFieldEffects: 955063c428d3262977d92c8804b3100e9142936a
+  UIImageViewModeScaleAspect: ec78901acfc20d3782154111a21d34390f8f71ad
+
+COCOAPODS: 0.38.2

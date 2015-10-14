@@ -1,3 +1,4 @@
+//
 //  TextFieldsEffects.swift
 //  TextFieldEffects
 //
@@ -8,13 +9,14 @@
 import Foundation
 import UIKit
 
-extension String {
-    public var isNotEmpty: Bool {
-        return !isEmpty
-    }
+protocol TextFieldsEffectsProtocol {
+    func drawViewsForRect(rect: CGRect)
+    func updateViewsForBoundsChange(bounds: CGRect)
+    func animateViewsForTextEntry()
+    func animateViewsForTextDisplay()
 }
 
-public class TextFieldEffects : UITextField {
+public class TextFieldEffects : UITextField, TextFieldsEffectsProtocol {
     
     let placeholderLabel = UILabel()
     

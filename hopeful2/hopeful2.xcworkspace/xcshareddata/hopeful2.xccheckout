@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9B45711C-E687-4F90-8F9A-E9023C7D59B6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>hopeful2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CC7121D591432EFE157D9DA656EE76D443856DFA</key>
+		<string>bitbucket.org:theshepherd1/hopeful2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>hopeful2/hopeful2.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CC7121D591432EFE157D9DA656EE76D443856DFA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:theshepherd1/hopeful2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CC7121D591432EFE157D9DA656EE76D443856DFA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC7121D591432EFE157D9DA656EE76D443856DFA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hopeful2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

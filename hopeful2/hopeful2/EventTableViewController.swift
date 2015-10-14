@@ -4,7 +4,7 @@ import UIKit
 class EventTableViewController: UITableViewController, UIScrollViewDelegate, UITableViewDelegate {
     
     var isAtTop = true
-        
+    
     @IBAction func showMenu(sender: AnyObject) {
         self.performSegueWithIdentifier("ShowMenuSegue", sender: sender.barButtonItem)
         
@@ -53,7 +53,7 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
         cell.eventPhotoView.frame.size = CGSize(width: cell.frame.size.width/2, height: cell.frontViewContainer.frame.size.height)
         
         
-        cell.frontView.image = UIImage(named: "download.jpeg")
+        cell.frontPhotoView.image = UIImage(named: "download.jpeg")
         cell.eventPhotoView.image = UIImage(named: "download2.jpg")
         
         cell.frontView.contentMode = UIViewContentMode.ScaleAspectFill
@@ -102,21 +102,49 @@ class EventTableViewController: UITableViewController, UIScrollViewDelegate, UIT
     }
     
     func showPhotoView(cell: EventTableViewCell) {
-        cell.eventPhotoView.hidden = false
-        cell.frontViewContainer.hidden = false
-        cell.frontView.hidden = false
-        cell.eventDetailView.hidden = true
+//        cell.eventPhotoView.hidden = false
+//        cell.frontViewContainer.hidden = false
+//        cell.frontView.hidden = false
+//        cell.eventDetailView.hidden = true
+        var frontSubviews = cell.frontView.subviews as! [UIView]
+        var backSubviews = cell.backView.subviews as! [UIView]
+
+        for myView: UIView in frontSubviews {
+            myView.hidden = false
+        }
+
+        for myView: UIView in backSubviews {
+            myView.hidden = true
+        }
         
+//        cell.frontView.hidden = false
+//        cell.backView.hidden = true
+//
         cell.didSelect = false
 
     }
     
     func showDetailView(cell: EventTableViewCell) {
-        cell.eventPhotoView.hidden = true
-        cell.frontViewContainer.hidden = true
-        cell.frontView.hidden = true
-        cell.eventDetailView.hidden = false
+//        cell.eventPhotoView.hidden = true
+//        cell.frontViewContainer.hidden = true
+//        cell.frontView.hidden = true
+//        cell.eventDetailView.hidden = false
 
+        var frontSubviews = cell.frontView.subviews as! [UIView]
+        var backSubviews = cell.backView.subviews as! [UIView]
+        
+        for myView: UIView in frontSubviews {
+            myView.hidden = true
+        }
+        
+        for myView: UIView in backSubviews {
+            myView.hidden = false
+        }
+
+//        
+//        cell.frontView.hidden = true
+//        cell.backView.hidden = false
+//        
         cell.didSelect = true
     }
     

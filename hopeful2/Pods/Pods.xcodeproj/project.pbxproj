@@ -1,0 +1,1287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068D3226FA309CFBDCCC7E187EBF8486 /* UIImageViewModeScaleAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 690A107C0C833B028DDDA9DEF8B356A3 /* UIImageViewModeScaleAspect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		075C5CFBB4E7A161F8D952EF3B533AE4 /* AlbumTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C199A6E63A66786F1023E5D21F06F3 /* AlbumTitleView.xib */; };
+		0AD9BFC6F539F09AA83888BA5258FBB8 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C78AD8E5975F0681C9E53411572800B4 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17C76922C8C83537FFE502AAB1EBFBD2 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5155AA4238E4A3FF27CD78A5C0597 /* IsaoTextField.swift */; };
+		19BF4985103476DF3BBB34C0E0136219 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CCCB8FA96AD006BB8741DC88CE86D1 /* AkiraTextField.swift */; };
+		1D6458C8BCAA7E050A5D9F268CE3EA9E /* AlbumCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A350950A9675E6EC895A27E1D81F0B /* AlbumCellFactory.swift */; };
+		1E1420FE0387FC2CC58FE549B4C0485E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B54F42322D0E35D31DE62D64F71880 /* Settings.swift */; };
+		1E16A81BE5ADABD33AFE8ABA956308B9 /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD59F182344CC50844BB9B15CF6B0B44 /* arrow_down@3x.png */; };
+		1FF87832E499FF75ED73229B625FCEDC /* AlbumTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6502817254BF8B9B12BB68C3320C6 /* AlbumTitleView.swift */; };
+		203AAA3036F9723C6A7FD95FA606B144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78ABFB3122C090232EAEC6180D3D4D3 /* Foundation.framework */; };
+		20952CD014BBD463823E25EDED4F597A /* HSDatePickerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD362BF5DD0E547E62BA8A9DE30F8F95 /* HSDatePickerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220A69ABCB120A1BD5232A12633F66A8 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F586AB8C7675FE199B0F0F2BB78097E /* AlbumsViewController.swift */; };
+		227C041E1CD4492ADE0FD853B3B5A406 /* BSImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4561CE59DF7009655063A382BDB94BF /* BSImagePicker.bundle */; };
+		25A3D6E0470D0599D60C9E2A34ABD136 /* UIImageViewModeScaleAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = F241920D9376287ED66D9EDCE6701ABF /* UIImageViewModeScaleAspect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		261B9A619BE6F1ADF55F92331CFBB83B /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E901393366E5B56F19BC508E500C53 /* MadokaTextField.swift */; };
+		30CCB3B24F6D10877CEB7DD5B2D3FE3E /* arrow_down@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B907586D47E9C59BB56D9E7D16C1198 /* arrow_down@1x.png */; };
+		30EE8210385B246B9F81D206C637204D /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EAE51F33B8170C0F7E37396C838594 /* PhotosViewController.swift */; };
+		31BE3361E7E5DD42E3DA0F0276F46E6B /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C015333A083988D4DD7D57FE8D4A448A /* JiroTextField.swift */; };
+		378CF941EFF594BB3400FC8254E1DEA8 /* arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FA0DBBEF17B542A91F67224DF537B1 /* arrow_down@2x.png */; };
+		3C0C5FFCF9EE7C87745F22C536EA425C /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03F1D422D8BB99F7532583F4E0811B /* PhotoCell.swift */; };
+		42581F03308BE4DC09E9F33500BA2112 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB452A1E11A72AC4FB35EFF69EDB65 /* YokoTextField.swift */; };
+		43C74932FC3806DEB0BDE38F74C3E1B2 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8C1C144999187AB42EF5139D9420A1 /* Photos.framework */; };
+		4634826C768F4C512D7C053192D7B004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78ABFB3122C090232EAEC6180D3D4D3 /* Foundation.framework */; };
+		4A1B126C5E8D500DE98AE05BA41A6159 /* CollectionViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5015DE57B93E6D00223C9558789728A /* CollectionViewCellFactory.swift */; };
+		4D587176B1FC1DCA21FE7F893C780162 /* HSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF082B07058FB83A183411092E9B5B14 /* HSDatePickerViewController.m */; };
+		563630EC0B4DC9520E8926F470C512BA /* BSImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF44957897BD77F636D7A8A13858640 /* BSImagePicker-dummy.m */; };
+		5A12EF13ADB0708F047EF6CA7FBA9372 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78ABFB3122C090232EAEC6180D3D4D3 /* Foundation.framework */; };
+		5F0A715EF0AB7613A1BEFBE83261AA35 /* AssetCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D2511B5513A8344267295B363CEC4D /* AssetCollectionDataSource.swift */; };
+		6790E24AC15D98BAB3F45593692EC207 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC4DBBC862E591EA988D2694B0C7F5 /* AlbumCell.swift */; };
+		77F22A222AB03AA07A9FF71454C4E307 /* TableViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890C6F5A183C5242C64C8B5FEF16B9E /* TableViewCellFactory.swift */; };
+		7B40E862A2B8D9CA8F15CACC661611EC /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CFA2DA292453F932606594C8417830 /* TextFieldsEffects.swift */; };
+		87ED66420E9EF85C6846AFDD633E4A79 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E08E6623B88C3E4447A1179A6AEA24 /* TextFieldEffects-dummy.m */; };
+		88F31C8C9DD7351C9F18E17C296C1CA8 /* Pods-hopeful2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7768D11E182D46E900766657DA7D /* Pods-hopeful2-dummy.m */; };
+		8B0143ECC853C1F3CB74FE71D37D81A1 /* UIImageViewModeScaleAspect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4498C884A22BD99AAA87A98D205EB9C /* UIImageViewModeScaleAspect.framework */; };
+		8B93906E2CB8C5008D5B0829DDA90473 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5172D004E3D323E1AA7CAE2286CE3888 /* ZoomAnimator.swift */; };
+		93C79D135B8B06866283C52FF0E3C5A4 /* SelectableDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3741F62F51C185721EEE99A8AB392F7 /* SelectableDataDelegate.swift */; };
+		98823882490EE0392BEE7101D10B45E4 /* HSDatePickerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 328366B9C439B3F74752082C2489B510 /* HSDatePickerViewController-dummy.m */; };
+		99932B5BC2E2A6FA6D6B0796CB861F8A /* BSImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA6E6D236D5FB0FA95879F58CD9A30 /* BSImagePickerViewController.swift */; };
+		A8B5740277064A99FF203D0741B914F9 /* UIViewController+BSImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7810BFCF211D81DA3318FCA46F2C06 /* UIViewController+BSImagePicker.swift */; };
+		B3FE70D69A3787F806E3787F5015F328 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CC1F573CCEBBB57E4A17DCBC695A958 /* PhotoCell.xib */; };
+		B4142E9AB848E0DD1697151DE517E623 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E792CB95BA12A9974CC03EC82F2EB6 /* SelectionView.swift */; };
+		B44DDF42810376F39B20B39CCC45543F /* FetchResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726D69A37D140149B92F3B5693C6946 /* FetchResultsDataSource.swift */; };
+		B533D1CA52FF604493FF6099A9AC9A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78ABFB3122C090232EAEC6180D3D4D3 /* Foundation.framework */; };
+		B8033239BFCFD73B839B30A7DCE07F54 /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040CF65A53C5CFF472F10DBBFE9059D0 /* Albums.storyboard */; };
+		BAB6895F83288A7ECA7B3D2D32D5538D /* HSDatePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1E3DDD9F54A646CA35D065450D6A2C /* HSDatePickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC90708A903F8A079DDCEFB06B16315A /* UIImageViewModeScaleAspect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17438D8E7A76D97231F485F4A7A0246D /* UIImageViewModeScaleAspect-dummy.m */; };
+		BD7CC5F846BD9EEFED46FA9D6ABE14C1 /* HSDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147EAC237D627FB71B8641895E7D9D37 /* HSDatePickerViewController.xib */; };
+		C19D8CD57CBCE95AE0F9F685B43A53F3 /* BSImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD9B12F4A869F62558F850DCF8E7D34 /* BSImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4B07B4F13BC5D1BBBDFE1EA91E97CA0 /* BSImagePickerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7674B28AC2AC1F7A5D123BEFA317C2 /* BSImagePickerSettings.swift */; };
+		C59FD151B0113DFD39CFF86B73A20FF6 /* UIButton+NoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A1E776AD1E66D75238556E2FF2DD7 /* UIButton+NoAnimation.swift */; };
+		CCC3E53C54BE30142EB8ACDCEFEBA0DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78ABFB3122C090232EAEC6180D3D4D3 /* Foundation.framework */; };
+		D2E8B83C630BD1F25C0D71FA0BACD58E /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1952C34B2D83AAB4C4089561AF8A63 /* KaedeTextField.swift */; };
+		DBE0F50B1368978DAAB18E6A51AB3D6F /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9033F4D8F0E3318AEBA2668143A79 /* HoshiTextField.swift */; };
+		DCC0EAD7F203B0FABBDD3A322552DB1B /* UIImageViewModeScaleAspect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 246079713C2A613D66BB0A0F748E5D63 /* UIImageViewModeScaleAspect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF3D023807E16BA1337FABB5C93360C3 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E64ED4269296E69C39456A54F5FB1E /* TableViewDataSource.swift */; };
+		E4647D7F77776288283B39282B05434D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9E8A52E72B5E12C4139FB6C5E8966 /* PreviewViewController.swift */; };
+		E556F1FA85107C2507066549BB2935CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A816880605332820ED18A3153F649 /* UIKit.framework */; };
+		E7982EF57573FE0826277D926EC4A4DB /* PhotoCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B09F1B0D3433EF78485A9AE1C94651 /* PhotoCellFactory.swift */; };
+		F2ED934944ADF50EDFB218D4571CC2F3 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA2B7F5183F6AE27E629EBD18E7D29 /* MinoruTextField.swift */; };
+		F38E4C0476BC08F033F418C023BBCE22 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB4A655ED2324888E36E7872197EBA /* CollectionViewDataSource.swift */; };
+		F7D2D615935742D164D2DB83455ECF3D /* Pods-hopeful2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46375E0CECCF69AC5C8EBE58AA82699E /* Pods-hopeful2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA093A94443CF2A9FA76BD9D11267B9D /* SelectableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC52EEF317FB551583606E776EFDE7B /* SelectableDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2356CC7BC8F4F37414047C7235283A76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7ED902DA9B8C7F94554D537AB6765C7;
+			remoteInfo = TextFieldEffects;
+		};
+		3F3A6FA37E6205F0EEE98D79A096CFF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E6A9F0D58B6DF7A3AAA558E400EC3FB;
+			remoteInfo = UIImageViewModeScaleAspect;
+		};
+		3F6CC394CD33FB80417347331C380635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AFA28B71F2C8BE4D975A1602CEDC2DB;
+			remoteInfo = BSImagePicker;
+		};
+		672AFC02DCD133EF7C9359ADB6799002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CF3CF32D6865276A1DE712D9C3E2483;
+			remoteInfo = HSDatePickerViewController;
+		};
+		91C0C742772692FC8B09F640ADFA008B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5984DCD679D8A7C5153F674F91F41CB9;
+			remoteInfo = "BSImagePicker-BSImagePicker";
+		};
+		D1D9AA12C1B70732C646D3A372C4113F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E6A9F0D58B6DF7A3AAA558E400EC3FB;
+			remoteInfo = UIImageViewModeScaleAspect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040CF65A53C5CFF472F10DBBFE9059D0 /* Albums.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Albums.storyboard; path = Pod/Assets/Albums.storyboard; sourceTree = "<group>"; };
+		04AC7768D11E182D46E900766657DA7D /* Pods-hopeful2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hopeful2-dummy.m"; sourceTree = "<group>"; };
+		05B09F1B0D3433EF78485A9AE1C94651 /* PhotoCellFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCellFactory.swift; path = Pod/Classes/Factory/PhotoCellFactory.swift; sourceTree = "<group>"; };
+		08CCCB8FA96AD006BB8741DC88CE86D1 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		0D107927548C78B9560252C7FB8C9FA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F586AB8C7675FE199B0F0F2BB78097E /* AlbumsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumsViewController.swift; path = Pod/Classes/Controller/AlbumsViewController.swift; sourceTree = "<group>"; };
+		0F8E8CE9A08071E074B49AA11B69F745 /* BSImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		117E5AF88221A56257712672D640DAD2 /* UIImageViewModeScaleAspect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIImageViewModeScaleAspect.xcconfig; sourceTree = "<group>"; };
+		13FA0DBBEF17B542A91F67224DF537B1 /* arrow_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@2x.png"; path = "Pod/Assets/arrow_down@2x.png"; sourceTree = "<group>"; };
+		147EAC237D627FB71B8641895E7D9D37 /* HSDatePickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = HSDatePickerViewController.xib; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.xib; sourceTree = "<group>"; };
+		1497274C4705F53AD333FF8204F82162 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CFA2DA292453F932606594C8417830 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		17438D8E7A76D97231F485F4A7A0246D /* UIImageViewModeScaleAspect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageViewModeScaleAspect-dummy.m"; sourceTree = "<group>"; };
+		1B907586D47E9C59BB56D9E7D16C1198 /* arrow_down@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@1x.png"; path = "Pod/Assets/arrow_down@1x.png"; sourceTree = "<group>"; };
+		1D35535D4C60F8AD4AA0C7D619DA6C40 /* Pods_hopeful2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hopeful2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DDA6E6D236D5FB0FA95879F58CD9A30 /* BSImagePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImagePickerViewController.swift; path = Pod/Classes/Controller/BSImagePickerViewController.swift; sourceTree = "<group>"; };
+		20B54F42322D0E35D31DE62D64F71880 /* Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Pod/Classes/Model/Settings.swift; sourceTree = "<group>"; };
+		2174303F8C0850CDFB6E105FF4FE4121 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D9033F4D8F0E3318AEBA2668143A79 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		246079713C2A613D66BB0A0F748E5D63 /* UIImageViewModeScaleAspect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewModeScaleAspect-umbrella.h"; sourceTree = "<group>"; };
+		2CEC4DBBC862E591EA988D2694B0C7F5 /* AlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumCell.swift; path = Pod/Classes/View/AlbumCell.swift; sourceTree = "<group>"; };
+		2EF44957897BD77F636D7A8A13858640 /* BSImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSImagePicker-dummy.m"; sourceTree = "<group>"; };
+		30D5155AA4238E4A3FF27CD78A5C0597 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		328366B9C439B3F74752082C2489B510 /* HSDatePickerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSDatePickerViewController-dummy.m"; sourceTree = "<group>"; };
+		364A1E776AD1E66D75238556E2FF2DD7 /* UIButton+NoAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+NoAnimation.swift"; path = "Pod/Classes/Extension/UIButton+NoAnimation.swift"; sourceTree = "<group>"; };
+		373D866378C8717784BB8D0839A6926B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38B25817B3E36E3A362C4E9C5579BE7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA02AC6A455F2FB47B14293E055A48C /* Pods-hopeful2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hopeful2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		43E792CB95BA12A9974CC03EC82F2EB6 /* SelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectionView.swift; path = Pod/Classes/View/SelectionView.swift; sourceTree = "<group>"; };
+		4475A0898F9D0145381652F54F4BE279 /* UIImageViewModeScaleAspect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewModeScaleAspect-prefix.pch"; sourceTree = "<group>"; };
+		46375E0CECCF69AC5C8EBE58AA82699E /* Pods-hopeful2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hopeful2-umbrella.h"; sourceTree = "<group>"; };
+		465A04823FF2FE5F39D932D32BB885CD /* UIImageViewModeScaleAspect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImageViewModeScaleAspect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5BE67A0F9E77AFCF592D188BE8C2E8 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		5172D004E3D323E1AA7CAE2286CE3888 /* ZoomAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimator.swift; path = Pod/Classes/Controller/ZoomAnimator.swift; sourceTree = "<group>"; };
+		54BB4A655ED2324888E36E7872197EBA /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewDataSource.swift; path = Pod/Classes/Model/CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		5CC1F573CCEBBB57E4A17DCBC695A958 /* PhotoCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PhotoCell.xib; path = Pod/Assets/PhotoCell.xib; sourceTree = "<group>"; };
+		62A8972B50D9EAA6B8BE8AB2933EBB69 /* HSDatePickerViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "HSDatePickerViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		6890C6F5A183C5242C64C8B5FEF16B9E /* TableViewCellFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewCellFactory.swift; path = Pod/Classes/Protocol/TableViewCellFactory.swift; sourceTree = "<group>"; };
+		690A107C0C833B028DDDA9DEF8B356A3 /* UIImageViewModeScaleAspect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIImageViewModeScaleAspect.m; path = UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.m; sourceTree = "<group>"; };
+		6F1005FE29826FD461609756D08FFCD1 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		6F7674B28AC2AC1F7A5D123BEFA317C2 /* BSImagePickerSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImagePickerSettings.swift; path = Pod/Classes/Protocol/BSImagePickerSettings.swift; sourceTree = "<group>"; };
+		6FC229847ADD4A88084F61C98097AB5D /* BSImagePicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BSImagePicker-Private.xcconfig"; sourceTree = "<group>"; };
+		779830FAEB012C8D43A23BC19680A867 /* UIImageViewModeScaleAspect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIImageViewModeScaleAspect.modulemap; sourceTree = "<group>"; };
+		77EAE51F33B8170C0F7E37396C838594 /* PhotosViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = Pod/Classes/Controller/PhotosViewController.swift; sourceTree = "<group>"; };
+		80ABE08392A15742C46165B838AC08A2 /* BSImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A350950A9675E6EC895A27E1D81F0B /* AlbumCellFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumCellFactory.swift; path = Pod/Classes/Factory/AlbumCellFactory.swift; sourceTree = "<group>"; };
+		88C9E8A52E72B5E12C4139FB6C5E8966 /* PreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = Pod/Classes/Controller/PreviewViewController.swift; sourceTree = "<group>"; };
+		8A03F1D422D8BB99F7532583F4E0811B /* PhotoCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = Pod/Classes/View/PhotoCell.swift; sourceTree = "<group>"; };
+		8A1E3DDD9F54A646CA35D065450D6A2C /* HSDatePickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HSDatePickerViewController.h; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.h; sourceTree = "<group>"; };
+		8A8C1C144999187AB42EF5139D9420A1 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		8CA2109C1C38ACB195E23AC60BDEF169 /* Pods-hopeful2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hopeful2-frameworks.sh"; sourceTree = "<group>"; };
+		90775CE6DADA447531FB6EF9CAC81274 /* UIImageViewModeScaleAspect-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIImageViewModeScaleAspect-Private.xcconfig"; sourceTree = "<group>"; };
+		913DDF59BCF7204C622243BF8E8C7B25 /* HSDatePickerViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HSDatePickerViewController.modulemap; sourceTree = "<group>"; };
+		955A537458E3BA7CC0D8919C8ED4CC51 /* TextFieldEffects-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TextFieldEffects-Private.xcconfig"; sourceTree = "<group>"; };
+		95831748730CDB93864F3FD86C7F0750 /* HSDatePickerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSDatePickerViewController.xcconfig; sourceTree = "<group>"; };
+		9726D69A37D140149B92F3B5693C6946 /* FetchResultsDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchResultsDataSource.swift; path = Pod/Classes/Model/FetchResultsDataSource.swift; sourceTree = "<group>"; };
+		9BC52EEF317FB551583606E776EFDE7B /* SelectableDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableDataSource.swift; path = Pod/Classes/Protocol/SelectableDataSource.swift; sourceTree = "<group>"; };
+		A2D2511B5513A8344267295B363CEC4D /* AssetCollectionDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetCollectionDataSource.swift; path = Pod/Classes/Model/AssetCollectionDataSource.swift; sourceTree = "<group>"; };
+		A4498C884A22BD99AAA87A98D205EB9C /* UIImageViewModeScaleAspect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImageViewModeScaleAspect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78ABFB3122C090232EAEC6180D3D4D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AA28E8CEC1575FF34C0B4D0DC004C5F2 /* BSImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BSImagePicker.modulemap; sourceTree = "<group>"; };
+		AD59F182344CC50844BB9B15CF6B0B44 /* arrow_down@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "Pod/Assets/arrow_down@3x.png"; sourceTree = "<group>"; };
+		AE7810BFCF211D81DA3318FCA46F2C06 /* UIViewController+BSImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+BSImagePicker.swift"; path = "Pod/Classes/Extension/UIViewController+BSImagePicker.swift"; sourceTree = "<group>"; };
+		AEE25D02E9AF115B45B123B52E1CCC26 /* Pods-hopeful2-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hopeful2-resources.sh"; sourceTree = "<group>"; };
+		B68A1C8D6904348B03B81B4DDBE21E0B /* BSImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImagePicker.xcconfig; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD0116AEECD1F41EAFF3CBBE23D65031 /* Pods-hopeful2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hopeful2-acknowledgements.plist"; sourceTree = "<group>"; };
+		C015333A083988D4DD7D57FE8D4A448A /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		C08A816880605332820ED18A3153F649 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C78AD8E5975F0681C9E53411572800B4 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		C8D8FF7CF2E1F9998F33BAD35AFE7D87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD362BF5DD0E547E62BA8A9DE30F8F95 /* HSDatePickerViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDatePickerViewController-umbrella.h"; sourceTree = "<group>"; };
+		CF082B07058FB83A183411092E9B5B14 /* HSDatePickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HSDatePickerViewController.m; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.m; sourceTree = "<group>"; };
+		D3741F62F51C185721EEE99A8AB392F7 /* SelectableDataDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableDataDelegate.swift; path = Pod/Classes/Protocol/SelectableDataDelegate.swift; sourceTree = "<group>"; };
+		D3CA2B7F5183F6AE27E629EBD18E7D29 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		D4561CE59DF7009655063A382BDB94BF /* BSImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E08E6623B88C3E4447A1179A6AEA24 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		D511F6C4408693DF1D542DC01E18FCB2 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		D6C5D722271C7B5EDA807921508CF815 /* HSDatePickerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDatePickerViewController-prefix.pch"; sourceTree = "<group>"; };
+		D7E901393366E5B56F19BC508E500C53 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		D8C199A6E63A66786F1023E5D21F06F3 /* AlbumTitleView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlbumTitleView.xib; path = Pod/Assets/AlbumTitleView.xib; sourceTree = "<group>"; };
+		DA1952C34B2D83AAB4C4089561AF8A63 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		DDD6502817254BF8B9B12BB68C3320C6 /* AlbumTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumTitleView.swift; path = Pod/Classes/View/AlbumTitleView.swift; sourceTree = "<group>"; };
+		E1E64ED4269296E69C39456A54F5FB1E /* TableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewDataSource.swift; path = Pod/Classes/Model/TableViewDataSource.swift; sourceTree = "<group>"; };
+		EACB452A1E11A72AC4FB35EFF69EDB65 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		EBD9B12F4A869F62558F850DCF8E7D34 /* BSImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		F1F7BB3DF0F38116502CE683B7D1640B /* Pods-hopeful2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hopeful2.release.xcconfig"; sourceTree = "<group>"; };
+		F241920D9376287ED66D9EDCE6701ABF /* UIImageViewModeScaleAspect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIImageViewModeScaleAspect.h; path = UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.h; sourceTree = "<group>"; };
+		F5015DE57B93E6D00223C9558789728A /* CollectionViewCellFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewCellFactory.swift; path = Pod/Classes/Protocol/CollectionViewCellFactory.swift; sourceTree = "<group>"; };
+		FB9F49DFEBB95BECAD5E8667E1E63C2C /* HSDatePickerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSDatePickerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE4785F97A6F3E85859BA1DD90E9589 /* Pods-hopeful2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hopeful2.debug.xcconfig"; sourceTree = "<group>"; };
+		FE7B5356D4B102E84C850A8761B2ECA8 /* Pods-hopeful2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-hopeful2.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44D79C26E34BB6B2868ADE10EF9FEFF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A12EF13ADB0708F047EF6CA7FBA9372 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639C92C0569A539E0A888C5AF9B78AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC3E53C54BE30142EB8ACDCEFEBA0DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AC36727FF2FBDA4B443D3E138E5037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4634826C768F4C512D7C053192D7B004 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721B70CB5B4D6A8468E1FD848CC0A958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B533D1CA52FF604493FF6099A9AC9A3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E79CBBE9B9648879938D25E33AB51FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203AAA3036F9723C6A7FD95FA606B144 /* Foundation.framework in Frameworks */,
+				43C74932FC3806DEB0BDE38F74C3E1B2 /* Photos.framework in Frameworks */,
+				8B0143ECC853C1F3CB74FE71D37D81A1 /* UIImageViewModeScaleAspect.framework in Frameworks */,
+				E556F1FA85107C2507066549BB2935CB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0D7AAE86FF72395828D6D31F32DA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C8DC77CA6DF3620F97E60969A489324 /* BSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				2CEC4DBBC862E591EA988D2694B0C7F5 /* AlbumCell.swift */,
+				85A350950A9675E6EC895A27E1D81F0B /* AlbumCellFactory.swift */,
+				DDD6502817254BF8B9B12BB68C3320C6 /* AlbumTitleView.swift */,
+				0F586AB8C7675FE199B0F0F2BB78097E /* AlbumsViewController.swift */,
+				A2D2511B5513A8344267295B363CEC4D /* AssetCollectionDataSource.swift */,
+				6F7674B28AC2AC1F7A5D123BEFA317C2 /* BSImagePickerSettings.swift */,
+				1DDA6E6D236D5FB0FA95879F58CD9A30 /* BSImagePickerViewController.swift */,
+				F5015DE57B93E6D00223C9558789728A /* CollectionViewCellFactory.swift */,
+				54BB4A655ED2324888E36E7872197EBA /* CollectionViewDataSource.swift */,
+				9726D69A37D140149B92F3B5693C6946 /* FetchResultsDataSource.swift */,
+				8A03F1D422D8BB99F7532583F4E0811B /* PhotoCell.swift */,
+				05B09F1B0D3433EF78485A9AE1C94651 /* PhotoCellFactory.swift */,
+				77EAE51F33B8170C0F7E37396C838594 /* PhotosViewController.swift */,
+				88C9E8A52E72B5E12C4139FB6C5E8966 /* PreviewViewController.swift */,
+				D3741F62F51C185721EEE99A8AB392F7 /* SelectableDataDelegate.swift */,
+				9BC52EEF317FB551583606E776EFDE7B /* SelectableDataSource.swift */,
+				43E792CB95BA12A9974CC03EC82F2EB6 /* SelectionView.swift */,
+				20B54F42322D0E35D31DE62D64F71880 /* Settings.swift */,
+				6890C6F5A183C5242C64C8B5FEF16B9E /* TableViewCellFactory.swift */,
+				E1E64ED4269296E69C39456A54F5FB1E /* TableViewDataSource.swift */,
+				364A1E776AD1E66D75238556E2FF2DD7 /* UIButton+NoAnimation.swift */,
+				AE7810BFCF211D81DA3318FCA46F2C06 /* UIViewController+BSImagePicker.swift */,
+				5172D004E3D323E1AA7CAE2286CE3888 /* ZoomAnimator.swift */,
+				B374C92CF42EA5BDB2F17A732D8D438B /* Resources */,
+				500BFEE4BD418F711DDD4854EA659EDB /* Support Files */,
+			);
+			path = BSImagePicker;
+			sourceTree = "<group>";
+		};
+		404A6D1D0096A9F2FDF7E104E3DAA492 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				913DDF59BCF7204C622243BF8E8C7B25 /* HSDatePickerViewController.modulemap */,
+				95831748730CDB93864F3FD86C7F0750 /* HSDatePickerViewController.xcconfig */,
+				62A8972B50D9EAA6B8BE8AB2933EBB69 /* HSDatePickerViewController-Private.xcconfig */,
+				328366B9C439B3F74752082C2489B510 /* HSDatePickerViewController-dummy.m */,
+				D6C5D722271C7B5EDA807921508CF815 /* HSDatePickerViewController-prefix.pch */,
+				CD362BF5DD0E547E62BA8A9DE30F8F95 /* HSDatePickerViewController-umbrella.h */,
+				373D866378C8717784BB8D0839A6926B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HSDatePickerViewController";
+			sourceTree = "<group>";
+		};
+		4C8C31CAA776298A61EFE3B4A4D78482 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1497274C4705F53AD333FF8204F82162 /* Info.plist */,
+				6F1005FE29826FD461609756D08FFCD1 /* TextFieldEffects.modulemap */,
+				4F5BE67A0F9E77AFCF592D188BE8C2E8 /* TextFieldEffects.xcconfig */,
+				955A537458E3BA7CC0D8919C8ED4CC51 /* TextFieldEffects-Private.xcconfig */,
+				D4E08E6623B88C3E4447A1179A6AEA24 /* TextFieldEffects-dummy.m */,
+				D511F6C4408693DF1D542DC01E18FCB2 /* TextFieldEffects-prefix.pch */,
+				C78AD8E5975F0681C9E53411572800B4 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		4F7FAFAD1682FF0E4BBBAF18C1520B8E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B73800E51F2504187B5D4E7F1ED13C5 /* Pods-hopeful2 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		500BFEE4BD418F711DDD4854EA659EDB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA28E8CEC1575FF34C0B4D0DC004C5F2 /* BSImagePicker.modulemap */,
+				B68A1C8D6904348B03B81B4DDBE21E0B /* BSImagePicker.xcconfig */,
+				6FC229847ADD4A88084F61C98097AB5D /* BSImagePicker-Private.xcconfig */,
+				2EF44957897BD77F636D7A8A13858640 /* BSImagePicker-dummy.m */,
+				0F8E8CE9A08071E074B49AA11B69F745 /* BSImagePicker-prefix.pch */,
+				EBD9B12F4A869F62558F850DCF8E7D34 /* BSImagePicker-umbrella.h */,
+				C8D8FF7CF2E1F9998F33BAD35AFE7D87 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BSImagePicker";
+			sourceTree = "<group>";
+		};
+		50FAA88355A7996031C207F422D0AADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4498C884A22BD99AAA87A98D205EB9C /* UIImageViewModeScaleAspect.framework */,
+				53FD0B3AD6B9BCF68D606AC5D2A8B432 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53FD0B3AD6B9BCF68D606AC5D2A8B432 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A78ABFB3122C090232EAEC6180D3D4D3 /* Foundation.framework */,
+				8A8C1C144999187AB42EF5139D9420A1 /* Photos.framework */,
+				C08A816880605332820ED18A3153F649 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		550B25D11C5ED251BF66053DE91E239E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38B25817B3E36E3A362C4E9C5579BE7C /* Info.plist */,
+				779830FAEB012C8D43A23BC19680A867 /* UIImageViewModeScaleAspect.modulemap */,
+				117E5AF88221A56257712672D640DAD2 /* UIImageViewModeScaleAspect.xcconfig */,
+				90775CE6DADA447531FB6EF9CAC81274 /* UIImageViewModeScaleAspect-Private.xcconfig */,
+				17438D8E7A76D97231F485F4A7A0246D /* UIImageViewModeScaleAspect-dummy.m */,
+				4475A0898F9D0145381652F54F4BE279 /* UIImageViewModeScaleAspect-prefix.pch */,
+				246079713C2A613D66BB0A0F748E5D63 /* UIImageViewModeScaleAspect-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIImageViewModeScaleAspect";
+			sourceTree = "<group>";
+		};
+		5B73800E51F2504187B5D4E7F1ED13C5 /* Pods-hopeful2 */ = {
+			isa = PBXGroup;
+			children = (
+				0D107927548C78B9560252C7FB8C9FA1 /* Info.plist */,
+				FE7B5356D4B102E84C850A8761B2ECA8 /* Pods-hopeful2.modulemap */,
+				3FA02AC6A455F2FB47B14293E055A48C /* Pods-hopeful2-acknowledgements.markdown */,
+				BD0116AEECD1F41EAFF3CBBE23D65031 /* Pods-hopeful2-acknowledgements.plist */,
+				04AC7768D11E182D46E900766657DA7D /* Pods-hopeful2-dummy.m */,
+				8CA2109C1C38ACB195E23AC60BDEF169 /* Pods-hopeful2-frameworks.sh */,
+				AEE25D02E9AF115B45B123B52E1CCC26 /* Pods-hopeful2-resources.sh */,
+				46375E0CECCF69AC5C8EBE58AA82699E /* Pods-hopeful2-umbrella.h */,
+				FCE4785F97A6F3E85859BA1DD90E9589 /* Pods-hopeful2.debug.xcconfig */,
+				F1F7BB3DF0F38116502CE683B7D1640B /* Pods-hopeful2.release.xcconfig */,
+			);
+			name = "Pods-hopeful2";
+			path = "Target Support Files/Pods-hopeful2";
+			sourceTree = "<group>";
+		};
+		6DAD780903A4E7754F7275C884524EF8 /* HSDatePickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A1E3DDD9F54A646CA35D065450D6A2C /* HSDatePickerViewController.h */,
+				CF082B07058FB83A183411092E9B5B14 /* HSDatePickerViewController.m */,
+				795C287B58322C8E370684CB610BE37C /* Resources */,
+				404A6D1D0096A9F2FDF7E104E3DAA492 /* Support Files */,
+			);
+			path = HSDatePickerViewController;
+			sourceTree = "<group>";
+		};
+		72DAABC2DA66B6776EF4DC1D0E1EF35C /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				08CCCB8FA96AD006BB8741DC88CE86D1 /* AkiraTextField.swift */,
+				23D9033F4D8F0E3318AEBA2668143A79 /* HoshiTextField.swift */,
+				30D5155AA4238E4A3FF27CD78A5C0597 /* IsaoTextField.swift */,
+				C015333A083988D4DD7D57FE8D4A448A /* JiroTextField.swift */,
+				DA1952C34B2D83AAB4C4089561AF8A63 /* KaedeTextField.swift */,
+				D7E901393366E5B56F19BC508E500C53 /* MadokaTextField.swift */,
+				D3CA2B7F5183F6AE27E629EBD18E7D29 /* MinoruTextField.swift */,
+				16CFA2DA292453F932606594C8417830 /* TextFieldsEffects.swift */,
+				EACB452A1E11A72AC4FB35EFF69EDB65 /* YokoTextField.swift */,
+				4C8C31CAA776298A61EFE3B4A4D78482 /* Support Files */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		795C287B58322C8E370684CB610BE37C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				147EAC237D627FB71B8641895E7D9D37 /* HSDatePickerViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				50FAA88355A7996031C207F422D0AADA /* Frameworks */,
+				7EA3C1C3E626AA147F9BABB7E5A2453D /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				4F7FAFAD1682FF0E4BBBAF18C1520B8E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7EA3C1C3E626AA147F9BABB7E5A2453D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DC77CA6DF3620F97E60969A489324 /* BSImagePicker */,
+				6DAD780903A4E7754F7275C884524EF8 /* HSDatePickerViewController */,
+				72DAABC2DA66B6776EF4DC1D0E1EF35C /* TextFieldEffects */,
+				C0288EB137A9B3B45F81A530CDF6BAC3 /* UIImageViewModeScaleAspect */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B374C92CF42EA5BDB2F17A732D8D438B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8C199A6E63A66786F1023E5D21F06F3 /* AlbumTitleView.xib */,
+				040CF65A53C5CFF472F10DBBFE9059D0 /* Albums.storyboard */,
+				5CC1F573CCEBBB57E4A17DCBC695A958 /* PhotoCell.xib */,
+				1B907586D47E9C59BB56D9E7D16C1198 /* arrow_down@1x.png */,
+				13FA0DBBEF17B542A91F67224DF537B1 /* arrow_down@2x.png */,
+				AD59F182344CC50844BB9B15CF6B0B44 /* arrow_down@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C0288EB137A9B3B45F81A530CDF6BAC3 /* UIImageViewModeScaleAspect */ = {
+			isa = PBXGroup;
+			children = (
+				F241920D9376287ED66D9EDCE6701ABF /* UIImageViewModeScaleAspect.h */,
+				690A107C0C833B028DDDA9DEF8B356A3 /* UIImageViewModeScaleAspect.m */,
+				550B25D11C5ED251BF66053DE91E239E /* Support Files */,
+			);
+			path = UIImageViewModeScaleAspect;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4561CE59DF7009655063A382BDB94BF /* BSImagePicker.bundle */,
+				80ABE08392A15742C46165B838AC08A2 /* BSImagePicker.framework */,
+				FB9F49DFEBB95BECAD5E8667E1E63C2C /* HSDatePickerViewController.framework */,
+				1D35535D4C60F8AD4AA0C7D619DA6C40 /* Pods_hopeful2.framework */,
+				2174303F8C0850CDFB6E105FF4FE4121 /* TextFieldEffects.framework */,
+				465A04823FF2FE5F39D932D32BB885CD /* UIImageViewModeScaleAspect.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02A2CEA6891C1F512A6E044CBEEA7182 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D2D615935742D164D2DB83455ECF3D /* Pods-hopeful2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E96D245B5381C53D54CF80405982164 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD9BFC6F539F09AA83888BA5258FBB8 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252A553414000D968BB0A5B0C2D27E72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20952CD014BBD463823E25EDED4F597A /* HSDatePickerViewController-umbrella.h in Headers */,
+				BAB6895F83288A7ECA7B3D2D32D5538D /* HSDatePickerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800AA666CD45AAF70519523AF456AA58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC0EAD7F203B0FABBDD3A322552DB1B /* UIImageViewModeScaleAspect-umbrella.h in Headers */,
+				25A3D6E0470D0599D60C9E2A34ABD136 /* UIImageViewModeScaleAspect.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A15B157397A5F9869EDC78458CDFB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19D8CD57CBCE95AE0F9F685B43A53F3 /* BSImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0E6A9F0D58B6DF7A3AAA558E400EC3FB /* UIImageViewModeScaleAspect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1BF08BD83E84BD4962880D821F76769 /* Build configuration list for PBXNativeTarget "UIImageViewModeScaleAspect" */;
+			buildPhases = (
+				BFEB3AB9DBAE7C0BA0333DEDA398D868 /* Sources */,
+				721B70CB5B4D6A8468E1FD848CC0A958 /* Frameworks */,
+				800AA666CD45AAF70519523AF456AA58 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIImageViewModeScaleAspect;
+			productName = UIImageViewModeScaleAspect;
+			productReference = 465A04823FF2FE5F39D932D32BB885CD /* UIImageViewModeScaleAspect.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4CF3CF32D6865276A1DE712D9C3E2483 /* HSDatePickerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4704B675F495012995716526CC0DC14D /* Build configuration list for PBXNativeTarget "HSDatePickerViewController" */;
+			buildPhases = (
+				3D07E8CB23635F05A0451C524D6D3479 /* Sources */,
+				44D79C26E34BB6B2868ADE10EF9FEFF7 /* Frameworks */,
+				252A553414000D968BB0A5B0C2D27E72 /* Headers */,
+				FE6C937F353468F643427EEDC43FBCFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSDatePickerViewController;
+			productName = HSDatePickerViewController;
+			productReference = FB9F49DFEBB95BECAD5E8667E1E63C2C /* HSDatePickerViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5984DCD679D8A7C5153F674F91F41CB9 /* BSImagePicker-BSImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B98DC96C61DA12310EDDE128001D7A /* Build configuration list for PBXNativeTarget "BSImagePicker-BSImagePicker" */;
+			buildPhases = (
+				01AF6E3495D17C8ACF055D1B24A092FB /* Sources */,
+				FB0D7AAE86FF72395828D6D31F32DA3A /* Frameworks */,
+				71790BA370A3D64AF7F03313A573A536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BSImagePicker-BSImagePicker";
+			productName = "BSImagePicker-BSImagePicker";
+			productReference = D4561CE59DF7009655063A382BDB94BF /* BSImagePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7AFA28B71F2C8BE4D975A1602CEDC2DB /* BSImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC05253162F4232C937CBD6191B53448 /* Build configuration list for PBXNativeTarget "BSImagePicker" */;
+			buildPhases = (
+				62851C20A358DFFCC8FD2B483412B13A /* Sources */,
+				E79CBBE9B9648879938D25E33AB51FBC /* Frameworks */,
+				7EF2C12C8C2A9944CE60CFC0B4DF475C /* Resources */,
+				A4A15B157397A5F9869EDC78458CDFB0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13BB708AB667DCCABE9C710728C133A9 /* PBXTargetDependency */,
+				C1060E6DA4C6A954896B64D912DCBF11 /* PBXTargetDependency */,
+			);
+			name = BSImagePicker;
+			productName = BSImagePicker;
+			productReference = 80ABE08392A15742C46165B838AC08A2 /* BSImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C984CBBA48212EB2C90DF8BD2C4FE3FC /* Pods-hopeful2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC5130FBC801F733AF71CDF436CD1A46 /* Build configuration list for PBXNativeTarget "Pods-hopeful2" */;
+			buildPhases = (
+				4E1856B7F000E2DC92A73C35B171B499 /* Sources */,
+				70AC36727FF2FBDA4B443D3E138E5037 /* Frameworks */,
+				02A2CEA6891C1F512A6E044CBEEA7182 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1456ADC7C6C96D6FD264320E93836E9C /* PBXTargetDependency */,
+				1AEE9E6ACA288048606DD6BCE59E44E3 /* PBXTargetDependency */,
+				190EBD0722E78C922540BDD497F0C6C0 /* PBXTargetDependency */,
+				8765197B7713E359328703DA48A62A5C /* PBXTargetDependency */,
+			);
+			name = "Pods-hopeful2";
+			productName = "Pods-hopeful2";
+			productReference = 1D35535D4C60F8AD4AA0C7D619DA6C40 /* Pods_hopeful2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7ED902DA9B8C7F94554D537AB6765C7 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76A8EE47DD0B56529ED9164D22211DC /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				3ED0EEEC2FF4FFB9F8B00CB7AB2983E7 /* Sources */,
+				639C92C0569A539E0A888C5AF9B78AE0 /* Frameworks */,
+				1E96D245B5381C53D54CF80405982164 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 2174303F8C0850CDFB6E105FF4FE4121 /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AFA28B71F2C8BE4D975A1602CEDC2DB /* BSImagePicker */,
+				5984DCD679D8A7C5153F674F91F41CB9 /* BSImagePicker-BSImagePicker */,
+				4CF3CF32D6865276A1DE712D9C3E2483 /* HSDatePickerViewController */,
+				C984CBBA48212EB2C90DF8BD2C4FE3FC /* Pods-hopeful2 */,
+				F7ED902DA9B8C7F94554D537AB6765C7 /* TextFieldEffects */,
+				0E6A9F0D58B6DF7A3AAA558E400EC3FB /* UIImageViewModeScaleAspect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71790BA370A3D64AF7F03313A573A536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075C5CFBB4E7A161F8D952EF3B533AE4 /* AlbumTitleView.xib in Resources */,
+				B8033239BFCFD73B839B30A7DCE07F54 /* Albums.storyboard in Resources */,
+				B3FE70D69A3787F806E3787F5015F328 /* PhotoCell.xib in Resources */,
+				30CCB3B24F6D10877CEB7DD5B2D3FE3E /* arrow_down@1x.png in Resources */,
+				378CF941EFF594BB3400FC8254E1DEA8 /* arrow_down@2x.png in Resources */,
+				1E16A81BE5ADABD33AFE8ABA956308B9 /* arrow_down@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF2C12C8C2A9944CE60CFC0B4DF475C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227C041E1CD4492ADE0FD853B3B5A406 /* BSImagePicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6C937F353468F643427EEDC43FBCFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7CC5F846BD9EEFED46FA9D6ABE14C1 /* HSDatePickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01AF6E3495D17C8ACF055D1B24A092FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D07E8CB23635F05A0451C524D6D3479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98823882490EE0392BEE7101D10B45E4 /* HSDatePickerViewController-dummy.m in Sources */,
+				4D587176B1FC1DCA21FE7F893C780162 /* HSDatePickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED0EEEC2FF4FFB9F8B00CB7AB2983E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19BF4985103476DF3BBB34C0E0136219 /* AkiraTextField.swift in Sources */,
+				DBE0F50B1368978DAAB18E6A51AB3D6F /* HoshiTextField.swift in Sources */,
+				17C76922C8C83537FFE502AAB1EBFBD2 /* IsaoTextField.swift in Sources */,
+				31BE3361E7E5DD42E3DA0F0276F46E6B /* JiroTextField.swift in Sources */,
+				D2E8B83C630BD1F25C0D71FA0BACD58E /* KaedeTextField.swift in Sources */,
+				261B9A619BE6F1ADF55F92331CFBB83B /* MadokaTextField.swift in Sources */,
+				F2ED934944ADF50EDFB218D4571CC2F3 /* MinoruTextField.swift in Sources */,
+				87ED66420E9EF85C6846AFDD633E4A79 /* TextFieldEffects-dummy.m in Sources */,
+				7B40E862A2B8D9CA8F15CACC661611EC /* TextFieldsEffects.swift in Sources */,
+				42581F03308BE4DC09E9F33500BA2112 /* YokoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1856B7F000E2DC92A73C35B171B499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F31C8C9DD7351C9F18E17C296C1CA8 /* Pods-hopeful2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62851C20A358DFFCC8FD2B483412B13A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6790E24AC15D98BAB3F45593692EC207 /* AlbumCell.swift in Sources */,
+				1D6458C8BCAA7E050A5D9F268CE3EA9E /* AlbumCellFactory.swift in Sources */,
+				1FF87832E499FF75ED73229B625FCEDC /* AlbumTitleView.swift in Sources */,
+				220A69ABCB120A1BD5232A12633F66A8 /* AlbumsViewController.swift in Sources */,
+				5F0A715EF0AB7613A1BEFBE83261AA35 /* AssetCollectionDataSource.swift in Sources */,
+				563630EC0B4DC9520E8926F470C512BA /* BSImagePicker-dummy.m in Sources */,
+				C4B07B4F13BC5D1BBBDFE1EA91E97CA0 /* BSImagePickerSettings.swift in Sources */,
+				99932B5BC2E2A6FA6D6B0796CB861F8A /* BSImagePickerViewController.swift in Sources */,
+				4A1B126C5E8D500DE98AE05BA41A6159 /* CollectionViewCellFactory.swift in Sources */,
+				F38E4C0476BC08F033F418C023BBCE22 /* CollectionViewDataSource.swift in Sources */,
+				B44DDF42810376F39B20B39CCC45543F /* FetchResultsDataSource.swift in Sources */,
+				3C0C5FFCF9EE7C87745F22C536EA425C /* PhotoCell.swift in Sources */,
+				E7982EF57573FE0826277D926EC4A4DB /* PhotoCellFactory.swift in Sources */,
+				30EE8210385B246B9F81D206C637204D /* PhotosViewController.swift in Sources */,
+				E4647D7F77776288283B39282B05434D /* PreviewViewController.swift in Sources */,
+				93C79D135B8B06866283C52FF0E3C5A4 /* SelectableDataDelegate.swift in Sources */,
+				FA093A94443CF2A9FA76BD9D11267B9D /* SelectableDataSource.swift in Sources */,
+				B4142E9AB848E0DD1697151DE517E623 /* SelectionView.swift in Sources */,
+				1E1420FE0387FC2CC58FE549B4C0485E /* Settings.swift in Sources */,
+				77F22A222AB03AA07A9FF71454C4E307 /* TableViewCellFactory.swift in Sources */,
+				DF3D023807E16BA1337FABB5C93360C3 /* TableViewDataSource.swift in Sources */,
+				C59FD151B0113DFD39CFF86B73A20FF6 /* UIButton+NoAnimation.swift in Sources */,
+				A8B5740277064A99FF203D0741B914F9 /* UIViewController+BSImagePicker.swift in Sources */,
+				8B93906E2CB8C5008D5B0829DDA90473 /* ZoomAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEB3AB9DBAE7C0BA0333DEDA398D868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC90708A903F8A079DDCEFB06B16315A /* UIImageViewModeScaleAspect-dummy.m in Sources */,
+				068D3226FA309CFBDCCC7E187EBF8486 /* UIImageViewModeScaleAspect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13BB708AB667DCCABE9C710728C133A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BSImagePicker-BSImagePicker";
+			target = 5984DCD679D8A7C5153F674F91F41CB9 /* BSImagePicker-BSImagePicker */;
+			targetProxy = 91C0C742772692FC8B09F640ADFA008B /* PBXContainerItemProxy */;
+		};
+		1456ADC7C6C96D6FD264320E93836E9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSImagePicker;
+			target = 7AFA28B71F2C8BE4D975A1602CEDC2DB /* BSImagePicker */;
+			targetProxy = 3F6CC394CD33FB80417347331C380635 /* PBXContainerItemProxy */;
+		};
+		190EBD0722E78C922540BDD497F0C6C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = F7ED902DA9B8C7F94554D537AB6765C7 /* TextFieldEffects */;
+			targetProxy = 2356CC7BC8F4F37414047C7235283A76 /* PBXContainerItemProxy */;
+		};
+		1AEE9E6ACA288048606DD6BCE59E44E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HSDatePickerViewController;
+			target = 4CF3CF32D6865276A1DE712D9C3E2483 /* HSDatePickerViewController */;
+			targetProxy = 672AFC02DCD133EF7C9359ADB6799002 /* PBXContainerItemProxy */;
+		};
+		8765197B7713E359328703DA48A62A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIImageViewModeScaleAspect;
+			target = 0E6A9F0D58B6DF7A3AAA558E400EC3FB /* UIImageViewModeScaleAspect */;
+			targetProxy = D1D9AA12C1B70732C646D3A372C4113F /* PBXContainerItemProxy */;
+		};
+		C1060E6DA4C6A954896B64D912DCBF11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIImageViewModeScaleAspect;
+			target = 0E6A9F0D58B6DF7A3AAA558E400EC3FB /* UIImageViewModeScaleAspect */;
+			targetProxy = 3F3A6FA37E6205F0EEE98D79A096CFF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		158C8E12FBA1F6FB7ABB22A74A53AFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A8972B50D9EAA6B8BE8AB2933EBB69 /* HSDatePickerViewController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HSDatePickerViewController/HSDatePickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HSDatePickerViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HSDatePickerViewController/HSDatePickerViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HSDatePickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F995C62170BC96A5A2072CF80340AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F7BB3DF0F38116502CE683B7D1640B /* Pods-hopeful2.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-hopeful2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-hopeful2/Pods-hopeful2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_hopeful2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48F31FD70A83C23A05252EB6BBA9B6C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955A537458E3BA7CC0D8919C8ED4CC51 /* TextFieldEffects-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.4.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.4.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59E54C930C71D9BAC3A17CD9D7445B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A8972B50D9EAA6B8BE8AB2933EBB69 /* HSDatePickerViewController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HSDatePickerViewController/HSDatePickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HSDatePickerViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HSDatePickerViewController/HSDatePickerViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HSDatePickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D1469C631841499EA9C8C3FE5851B3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90775CE6DADA447531FB6EF9CAC81274 /* UIImageViewModeScaleAspect-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.3.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageViewModeScaleAspect/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIImageViewModeScaleAspect;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		765B5BA6513088E38910A8A91D9E4BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC229847ADD4A88084F61C98097AB5D /* BSImagePicker-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.4.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BSImagePicker/BSImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BSImagePicker/BSImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BSImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C82DB50578F1B2C9987AE84C05E9D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC229847ADD4A88084F61C98097AB5D /* BSImagePicker-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BSImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C71CAF17817B146E840880848621F6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE4785F97A6F3E85859BA1DD90E9589 /* Pods-hopeful2.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-hopeful2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-hopeful2/Pods-hopeful2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_hopeful2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CEB052049C7703267529C27D08056F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90775CE6DADA447531FB6EF9CAC81274 /* UIImageViewModeScaleAspect-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.3.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageViewModeScaleAspect/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIImageViewModeScaleAspect;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E58972FC36EBA694A2D1656D3AB529A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955A537458E3BA7CC0D8919C8ED4CC51 /* TextFieldEffects-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.4.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.4.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA6C3C45D68D0E682A6E333398090569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC229847ADD4A88084F61C98097AB5D /* BSImagePicker-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BSImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F4D33929E594C7C13AB16F5F31B2B70C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC229847ADD4A88084F61C98097AB5D /* BSImagePicker-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.4.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BSImagePicker/BSImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BSImagePicker/BSImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BSImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4704B675F495012995716526CC0DC14D /* Build configuration list for PBXNativeTarget "HSDatePickerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E54C930C71D9BAC3A17CD9D7445B3B /* Debug */,
+				158C8E12FBA1F6FB7ABB22A74A53AFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76A8EE47DD0B56529ED9164D22211DC /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F31FD70A83C23A05252EB6BBA9B6C8 /* Debug */,
+				E58972FC36EBA694A2D1656D3AB529A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC05253162F4232C937CBD6191B53448 /* Build configuration list for PBXNativeTarget "BSImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				765B5BA6513088E38910A8A91D9E4BEA /* Debug */,
+				F4D33929E594C7C13AB16F5F31B2B70C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1BF08BD83E84BD4962880D821F76769 /* Build configuration list for PBXNativeTarget "UIImageViewModeScaleAspect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1469C631841499EA9C8C3FE5851B3A /* Debug */,
+				CEB052049C7703267529C27D08056F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B98DC96C61DA12310EDDE128001D7A /* Build configuration list for PBXNativeTarget "BSImagePicker-BSImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6C3C45D68D0E682A6E333398090569 /* Debug */,
+				8C82DB50578F1B2C9987AE84C05E9D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC5130FBC801F733AF71CDF436CD1A46 /* Build configuration list for PBXNativeTarget "Pods-hopeful2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71CAF17817B146E840880848621F6F2 /* Debug */,
+				3F995C62170BC96A5A2072CF80340AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

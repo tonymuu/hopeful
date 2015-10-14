@@ -10,10 +10,14 @@ import UIKit
 
 class EventTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var frontView: UIView!
+    
+    @IBOutlet weak var backView: UIView!
+    
     @IBOutlet weak var eventPhotoView: UIImageView!
     @IBOutlet weak var eventDetailView: UIView!
     @IBOutlet weak var frontViewContainer: UIView!
-    @IBOutlet weak var frontView: UIImageView!
+    @IBOutlet weak var frontPhotoView: UIImageView!
     
     @IBOutlet weak var hopeLabel: UILabel!
     
